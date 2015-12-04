@@ -31,7 +31,7 @@
 6시40분 ~       | 데이터그램 소개 & 색채학               | 송한나  |         |
                 | (초청발표) 데이터 저널리즘이란 무엇인가?| 최윤원  |         |
 7시10분 ~       | 싸이지먼트 소개                        | 김성근  |         |
-                | (초청발표) Estimating Volatility using R | 박경원  |         |
+                | (초청발표) Estimating Volatility using R | 박경원  | 옵션가격결정을 위한 변동성 추정 방법중 수치해석 기법인 newton raphson과 bisection method를 R로  변동성 추정 |
 7시40분~50분    | Breaking Time                          |         |         |
                 | 4부                                    |         |         |
 7시50분~        | 손고리즘 소개                          | 김무성  |         |
