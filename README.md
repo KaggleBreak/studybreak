@@ -1,4 +1,4 @@
-# 스터디 뽀개기
+# <img src="img/title.png" alt="D2" style="width: 676px;"/>
 
 # 2015년
 
