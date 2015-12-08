@@ -2,14 +2,14 @@
 # 스터디 뽀개기
 
 # 2015년
-<pre><code>
+<pre>
  NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://dev.naver.com/d2)
-일시 : 2015년 12월 19일. 오후 4시부터.
-장소 : NAVER D2 STARTUP FACTORY
-      강남역 2번 출구, 메리츠 타워 16층.
+ 일시 : 2015년 12월 19일. 오후 4시부터.
+ 장소 : NAVER D2 STARTUP FACTORY
+       강남역 2번 출구, 메리츠 타워 16층.
        http://map.naver.com/?dlevel=12&pinType=site&pinId=36797269&x=127.0286270&y=37.4970487&enc=b64
-온오프믹스 공지 - http://onoffmix.com/event/57896
-</code></pre>
+ 온오프믹스 공지 - http://onoffmix.com/event/57896
+</pre>
 
 ## 스케쥴
 
