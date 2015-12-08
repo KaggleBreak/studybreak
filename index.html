@@ -219,17 +219,17 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
 
 <!-- CHAT MARKUP -->
 <div class="example-chat l-demo-container">
-    <header>Firebase Chat Demo</header>
+    <header>캐글뽀개기 </header>
 
     <div class='example-chat-toolbar'>
-        <label for="nameInput">Username:</label>
-        <input type='text' id='nameInput' placeholder='enter a username...'>
+        <label for="nameInput">닉네임:</label>
+        <input type='text' id='nameInput' placeholder='닉네임을 적어주세요...'>
     </div>
 
     <ul id='example-messages' class="example-chat-messages"></ul>
 
     <footer>
-        <input type='text' id='messageInput'  placeholder='Type a message...'>
+        <input type='text' id='messageInput'  placeholder='글을 남겨봅니다...'>
     </footer>
 </div>
 
@@ -260,7 +260,7 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
     messagesRef.limitToLast(10).on('child_added', function (snapshot) {
         //GET DATA
         var data = snapshot.val();
-        var username = data.name || "anonymous";
+        var username = data.name || "무명씨";
         var message = data.text;
 
         //CREATE ELEMENTS MESSAGE & SANITIZE TEXT
