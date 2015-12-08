@@ -1,6 +1,6 @@
 {
   "useSideMenu": true,
   "lineBreaks": "gfm",
-  "additionalFooterText": "studybreak",
+  "additionalFooterText": "",
   "anchorCharacter": "#"
 }
