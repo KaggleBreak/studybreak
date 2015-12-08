@@ -1,5 +1,3 @@
-<img src="img/title.jpg" alt="D2" style="width: 100%;"/>
-
 ![](img/title.jpg)
 
 # 2015년
@@ -10,7 +8,7 @@
        강남역 2번 출구, 메리츠 타워 16층.
  온오프믹스 공지 - http://onoffmix.com/event/57896
 
-<img src="img/d2.png" alt="D2" style="width: 400px;"/>
+![](img/d2.png)
 
 ## 스케쥴
 
