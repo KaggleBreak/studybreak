@@ -10,7 +10,7 @@
  온오프믹스 공지 - http://onoffmix.com/event/57896
 </pre>
 
-<img src="/img/d2.png" alt="D2" style="width: 400px;"/>
+<img src="img/d2.png" alt="D2" style="width: 400px;"/>
 
 ## 스케쥴
 
