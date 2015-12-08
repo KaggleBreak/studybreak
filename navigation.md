@@ -1,7 +1,6 @@
 #
 
 [gimmick:theme (inverse: false)](bootstrap)
-[gimmick:ForkMeOnGitHub](https://github.com/datergram/datergram.github.io/)
 
 <style>
 .dropdown{
