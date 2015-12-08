@@ -1,4 +1,4 @@
-# <img src="img/title.jpg" alt="D2" style="width: 676px;"/>
+<img src="img/title.jpg" alt="D2" style="width: 100%;"/>
 
 # 2015년
 
