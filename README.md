@@ -1,5 +1,7 @@
 <img src="img/title.jpg" alt="D2" style="width: 100%;"/>
 
+![](img/title.jpg)
+
 # 2015년
 
  NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://dev.naver.com/d2)
