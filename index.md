@@ -1,0 +1,1 @@
+[![](poster/poster.jpg)](/studybreak/readme.html)
