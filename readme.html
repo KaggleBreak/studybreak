@@ -235,6 +235,10 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
 
 <!-- CHAT JAVACRIPT -->
 <script>
+    Array.prototype.random = function () {
+        return this[Math.floor((Math.random()*this.length))];
+    }
+
     // CREATE A REFERENCE TO FIREBASE
     var messagesRef = new Firebase('https://studybreak.firebaseio.com');
 
@@ -242,6 +246,7 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
     var messageField = $('#messageInput');
     var nameField = $('#nameInput');
     var messageList = $('#example-messages');
+    var nickNameList = ["너구리","신라면","안성탕면","짜파게티","맛짬뽕","스낵면"];
 
     // LISTEN FOR KEYPRESS EVENT
     messageField.keypress(function (e) {
@@ -250,11 +255,21 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
             var username = nameField.val();
             var message = messageField.val();
 
+            if(username == ""){
+                username = nickNameList.random();
+                nameField.val(username);
+            }
+
             //SAVE DATA TO FIREBASE AND EMPTY FIELD
             messagesRef.push({name:username, text:message});
             messageField.val('');
         }
     });
+
+    function randName(){
+
+        return "Asf";
+    }
 
     // Add a callback that is triggered for each chat message.
     messagesRef.limitToLast(50).on('child_added', function (snapshot) {
