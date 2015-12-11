@@ -28,7 +28,7 @@
 |                | (초청발표) python in neuroimaging  | 조강익  |  neuroimaging에 대한 인트로와 python 삽질기 (nipy / parallel processing) |                                                |
 |6시30분~6시40분 | Breaking Time                          |         |         |                                                            |
 |                | 3부                                    |         |         |                                                            |
-|6시40분 ~       | 데이터그램 소개 & 색채학               | 송한나  |         |                                                            |
+|6시40분 ~       | 데이터그램과 함께한 일년               | 송한나  |         |                                                            |
 |                | (초청발표) 데이터 저널리즘이란 무엇인가?| 최윤원  |         |                                                           |
 |7시10분 ~       | 싸이지먼트 소개                        | 김성근  |         |                                                            |
 |                | (초청발표) Estimating Volatility using R | 박경원  | 옵션가격결정을 위한 변동성 추정 방법중 수치해석 기법인 newton raphson과 bisection method이 있다. 이를 이용해서 변동성 추정하는 예를, R 코드와 함께 살펴본다.  |      |
