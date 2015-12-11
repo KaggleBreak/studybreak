@@ -15,7 +15,7 @@
 |    시간        |      제목                                | 발표자  |  내용   |   발표자료                                         |
 |:---	         |:---	                                  |:---	    |:---	 |:---	                                               |
 |                | 1부                                    |         |         |                                                    |
-|4시 ~           | 싸이그래머 소개                        | 김무성  |  [커뮤니티](https://www.facebook.com/groups/kagglebreak/), [스터디 자료](http://kagglebreak.github.io)       |                                                     |
+|4시 ~           | 싸이그래머 소개                        | 김무성  |  [커뮤니티](https://www.facebook.com/groups/kagglebreak/), [활동 내역](http://kagglebreak.github.io)       |                                                     |
 |                | (초청발표) 기계학습을 이용한 설문지에서 무성의한 응답 탐지 | 김형준  | IRT, SVM, MRF을 이용한 무성의 응답 탐지  |   |
 |                | (초청발표) 의식연구 엿보기             | 한정규  | 의식에 대한 과학적 탐구의 최신 이론과 논쟁을 살펴본다.        |   |
 |4시50분~5시     | Breaking Time                          |         |         |                                                      |
