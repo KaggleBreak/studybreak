@@ -34,11 +34,11 @@
 |
 |                | (초청발표) 여성 의류 쇼핑몰 데이터 분석 | 김승욱  |   |      |
 |                | (초청발표) Estimating Volatility using R | 박경원  | 옵션가격결정을 위한 변동성 추정 방법중 수치해석 기법인 newton raphson과 bisection method이 있다. 이를 이용해서 변동성 추정하는 예를, R 코드와 함께 살펴본다.  |      |
-|7시40분~50분    | Breaking Time                          |         |         |                                                             |
+|8시00분~8시 10분    | Breaking Time                          |         |         |                                                             |
 |                | 4부                                    |         |         |                                                             |
-|7시50분~        | 손고리즘 소개                          | 김무성  |    [커뮤니티](https://www.facebook.com/groups/songorithm/), [활동 내역](http://songorithm.github.io/)     |                                                             |
+|8시10분~        | 손고리즘 소개                          | 김무성  |    [커뮤니티](https://www.facebook.com/groups/songorithm/), [활동 내역](http://songorithm.github.io/)     |                                                             |
 |                | (초청발표) 도커와 AWS를 활용한 클라우드 딥러닝 환경 구축  | 김정주  |  도커 컨테이너화 된 Caffe 환경 소개와 이를 AWS의 GPU 인스턴스에 디플로이 하는 과정을 소개합니다.        |              |
-|8시20분 ~       | 아두베리스핀 소개                      | 박세진  |    [커뮤니티](https://www.facebook.com/groups/arduberryspin/), [활동 내역](http://arduberryspin.github.io)              |                                                                                                         |
+|8시30분 ~       | 아두베리스핀 소개                      | 박세진  |    [커뮤니티](https://www.facebook.com/groups/arduberryspin/), [활동 내역](http://arduberryspin.github.io)              |                                                                                                         |
 |                | (초청발표) 게임엔진을 활용한 로봇 시뮬레이션 기초 | 최윤규  | 블랜더 유니티등을 사용하여 로켓및 드론 시뮬레이터 만든 경험 공유 |                                               |
 |                | 5부                                    |         |         |                                                                                                                   |
-|8시50분~9시     | 캐글뽀개기 소개                        | 이상열  |  [커뮤니티](https://www.facebook.com/groups/kagglebreak/), [활동 내역](http://kagglebreak.github.io)       |    |
+|9시~9시 10분     | 캐글뽀개기 소개                        | 이상열  |  [커뮤니티](https://www.facebook.com/groups/kagglebreak/), [활동 내역](http://kagglebreak.github.io)       |    |
