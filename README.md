@@ -32,7 +32,7 @@
 |7시00분~7시10분 | Breaking Time                          |         |         |                                                            |
 |                | 4부                                    |         |         |                      |
 |7시10분 ~       | 싸이지먼트 소개                        | 김성근  |  [커뮤니티](https://www.facebook.com/groups/psygement/), [활동 내역](http://psygement.github.io/)       | |
-|                | (초청발표) 여성 의류 쇼핑몰 데이터 분석 | 김승욱  |   |      |
+|                | (초청발표) 여성 의류 쇼핑몰 데이터 분석 | 김승욱  | 온라인 여성의류 쇼핑몰 오픈 직후 6개월치 자료를 살펴보면서 데이터 전처리와 향후 데이터 수집방안, 그리고 모델링에 대해 토의해보는 시간을 가져보고자 한다.  |      |
 |                | (초청발표) Estimating Volatility using R | 박경원  | 옵션가격결정을 위한 변동성 추정 방법중 수치해석 기법인 newton raphson과 bisection method이 있다. 이를 이용해서 변동성 추정하는 예를, R 코드와 함께 살펴본다.  |      |
 |8시00분~8시 10분    | Breaking Time                          |         |         |                                                             |
 |                | 5부                                    |         |         |                      |
