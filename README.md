@@ -31,8 +31,7 @@
 |                | (초청발표) python in neuroimaging  | 조강익  |  neuroimaging에 대한 인트로와 python 삽질기 (nipy / parallel processing) |                                                |
 |7시00분~7시10분 | Breaking Time                          |         |         |                                                            |
 |                | 4부                                    |         |         |                      |
-|7시10분 ~       | 싸이지먼트 소개                        | 김성근  |  [커뮤니티](https://www.facebook.com/groups/psygement/), [활동 내역](http://psygement.github.io/)       |
-|
+|7시10분 ~       | 싸이지먼트 소개                        | 김성근  |  [커뮤니티](https://www.facebook.com/groups/psygement/), [활동 내역](http://psygement.github.io/)       | |
 |                | (초청발표) 여성 의류 쇼핑몰 데이터 분석 | 김승욱  |   |      |
 |                | (초청발표) Estimating Volatility using R | 박경원  | 옵션가격결정을 위한 변동성 추정 방법중 수치해석 기법인 newton raphson과 bisection method이 있다. 이를 이용해서 변동성 추정하는 예를, R 코드와 함께 살펴본다.  |      |
 |8시00분~8시 10분    | Breaking Time                          |         |         |                                                             |
