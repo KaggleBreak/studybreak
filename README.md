@@ -27,7 +27,7 @@
 |6시00분~6시10분 | Breaking Time                          |         |         |                                                     |
 |                | 3부                                    |         |         |                      |
 |6시10분 ~       | 바이오스핀 소개                        | 김가경  |   [커뮤니티](https://www.facebook.com/groups/biospin/), [활동 내역](http://biospin.github.io)      |  [slide](https://drive.google.com/file/d/0Bw594TdiBdAUcVIwZWQwSm5rRjg/view)                                                   |
-|                | (초청발표) 암 유전체 데이터를 이용한 진단 모델 구축 사례 | 지용기  |    암 환자의 RNA 데이터와 기계학습을 이용해서 진단 모델을 구축하는 사례를 소개한다     |           |
+|                | (초청발표) 암 유전체 데이터를 이용한 진단 모델 구축 사례 | 지용기  |    암 환자의 RNA 데이터와 기계학습을 이용해서 진단 모델을 구축하는 사례를 소개한다     |   [slide](https://drive.google.com/file/d/0B_Ekt7icI0htc3UybFE0UXd5YjQ/view)        |
 |                | (초청발표) python in neuroimaging  | 조강익  |  neuroimaging에 대한 인트로와 python 삽질기 (nipy / parallel processing) |  [slide](https://drive.google.com/file/d/0Bw594TdiBdAUUWtqSTNGSng2anM/view)   |
 |7시00분~7시10분 | Breaking Time                          |         |         |                                                            |
 |                | 4부                                    |         |         |                      |
