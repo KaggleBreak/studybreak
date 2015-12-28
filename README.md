@@ -21,7 +21,7 @@
 |4시50분~5시     | Breaking Time                          |         |         |                      |
 |                | 2부                                    |         |         |                      |
 |5시 ~           | 바벨피쉬 소개 + 복잡계(자연어처리응용) | 송치성  |   [커뮤니티](https://www.facebook.com/groups/babelPish/), [활동 내역](http://babelpish.github.io)      |                                                     |
-|                | 시나브로 배우는 자연어처리                      | 송치성  | 자연어처리의 전반적 개념과 벡터표현법을 이용한 NN모델인 word2vec에 대해 소개합니다. 대학생들이 작성한 텍스트데이터를 이용해 word2vec을 직접 시연합니다.        |        [slide](https://drive.google.com/file/d/0Bw594TdiBdAUdC12ejg5NTJ1UjQ/view)                                             |
+|                | 시나브로 배우는 자연어처리                      | 송치성  | 자연어처리의 전반적 개념과 벡터표현법을 이용한 NN모델인 word2vec에 대해 소개합니다. 대학생들이 작성한 텍스트데이터를 이용해 word2vec을 직접 시연합니다.        |        [slide](http://www.slideshare.net/shuraba1/ss-56479835)                                             |
 |5시30분 ~       | 데이터그램과 함께한 일년               | 송한나  |  [커뮤니티](https://www.facebook.com/groups/datergram/), [활동 내역](http://datergram.github.io/)       |  [slide](https://drive.google.com/file/d/0Bw594TdiBdAUdFFxcUJaSGZwZzg/view)                                                          |
 |                | (초청발표) 데이터 저널리즘과 시각화| 최윤원  |  좋은 데이터, 좋은 저널리즘, 좋은 시각화에 대한 이야기       |   [slide](https://drive.google.com/file/d/0Bw594TdiBdAUVzA0MkRGeXlCTTQ/view) |
 |6시00분~6시10분 | Breaking Time                          |         |         |                                                     |
