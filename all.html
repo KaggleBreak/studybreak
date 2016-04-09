@@ -1,31 +1,108 @@
 <!doctype html>
+
+
+<!DOCTYPE html>
 <html>
+<!--
+   This is MDwiki v0.6.1
+   (C) 2013 by Timo Dörr and contributors. This software is licensed
+   under the terms of the GNU GPLv3 with additional terms applied.
+   See https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt for more detail.
+   See http://github.com/Dynalon/mdwiki for a copy of the source code.
+-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <meta property="og:title" content="캐글 뽀개기" />
-    <meta property="og:description" content="캐글 뽀개기" />
+    <title>스터디뽀개기</title>
+    <meta property="og:title" content="스터디뽀개기.zip" />
+    <meta property="og:description" content="그 많던 스터디는 뭘하던 스터디일까? 본 모임은 싸이그래머,바이오스핀,싸이지먼트,손고리즘,데이터그램,바벨피쉬,아두베리스핀,캐글뽀개기에서 지원하는 연합스터디 모임입니다. 머신런닝,데이터과학,AI,생물정보학,경제학,자연어처리,HCI,로봇공학 등 다양한 분야에서 올 한 해 이뤄낸 성과를 여러분과 공유합니다." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://KaggelBreak.github.io" />
-    <title>KaggleBreak.github.io</title>
+    <meta property="og:url" content="http://kagglebreak.github.io/studybreak" />
+    <meta property="og:image" content="http://kagglebreak.github.io/studybreak/poster/poster.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta charset="UTF-8">
+    <style type="text/css">
+        /* hide the main content while we assemble everything */
+        .md-hidden-load { display: none; }
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        .anchor-highlight {
+            font-size: 0.7em;
+            margin-left: 0.25em;
+        }
+        /* for pageContentMenu */
+        #md-page-menu {
+            position: static;
+        }
+        #md-page-menu a.active {
+            /* background-color: rgba(0, 0, 0, 0.01); */
+            font-weight: bold;
+            padding-left: 6px;
 
-    </script>
+        }
+        @media (min-width: 992px) {
+            #md-page-menu.affix {
+                position: fixed;
+            }
+        }
+        @media (min-width: 768px) {
+            .md-float-left .col-sm-8, .md-float-right .col-sm-8 {
+                max-width: 66.67%;
+            }
+            .md-float-left .col-sm-4, .md-float-right .col-sm-4  {
+                max-width: 33.33%;
+            }
+            .md-float-left .col-sm-2, .md-float-right .col-sm-2 {
+                max-width: 16.67%;
+            }
+
+        }
+        @media (max-width: 992px) {
+            a.forkmeongithub {
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            /* don't use floating for smaller screens */
+            .md-float-left .col-sm-8, .md-float-left .col-sm-4, .md-float-left .col-sm-2 {
+                width: 100%;
+                max-width: !important;
+                min-width: 100%;
+            }
+            .md-float-right .col-sm-8, .md-float-right .col-sm-4, .md-float-right .col-sm-2 {
+                width: 100%;
+                max-width: !important;
+                min-width: 100%;
+            }
+        }
+
+        .md-floatenv .md-text {
+            /* md-text is not of md-col-* but needs the spacing */
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        /* float images */
+        .md-float-left .col-sm-8, .md-float-left .col-sm-4, .md-float-left .col-sm-2 {
+            width: auto;
+        }
+        .md-float-right .col-sm-8, .md-float-right .col-sm-4, .md-float-right .col-sm-2 {
+            float: right !important;
+            width: auto;
+        }
+        #md-all .md-copyright-footer {
+            background-color: !important;
+            font-size: smaller;
+            padding: 1em;
+        }
+    </style>
+
+ 
     <!-- START google analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-59804530-1', 'auto');
         ga('require', 'displayfeatures');
         ga('send', 'pageview', {
@@ -34,29 +111,8 @@
     </script>
     
     <!-- END google analytics -->
+
 </head>
-<body>
-<div class="wrapper">
-    <header>
-        <h1>KaggleBreak.github.io</h1>
-
-        <p></p>
-
-        <p><a href="https://www.facebook.com/groups/kagglebreak/">캐글뽀개기 페이스북 그룹</a></p>
-
-        <p class="view"><a href="https://github.com/KaggleBreak/problems"> GitHub </a></p>
-        
-        <p><img src="img/break.jpg" alt="대문" class="img-responsive img-thumbnail"></p>
-        
-    </header>
-    <section>
-        <h3>
-            <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span
-                    class="octicon octicon-link"></span></a>Welcome to KaggleBreak Pages.</h3>
-
-        <p> Kaggle 데이터를 이용한 데이터 분석 실습</p>
-
-<pre><code>
     <table>
         <thead>
             <tr>
@@ -87,102 +143,8 @@
             </tr>
         </tbody>
     </table>
-</code></pre>
-    
-    <p>
-    <table>
-        <thead>
-            <tr>
-                <th align="left">기간</th>
-                <th align="left">제목</th>
-                <th align="left">내용</th>
-                <th align="left">진행</th>
-                <th align="left">후기</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="left">2015/2/7</td>
-                <td align="left"><a href="http://onoffmix.com/event/41071">2월의 캐글 뽀개기</a></td>
-                <td align="left">bike sharing demand<br>(<a href="https://github.com/KaggleBreak/problems/blob/master/2015_02_bike/00.code">코드</a>)</td>
-                <td align="left">김승욱</td>
-                <td align="left"><a href="https://www.facebook.com/groups/psygrammer/permalink/821362694682890/"><img src = "https://raw.githubusercontent.com/KaggleBreak/KaggleBreak.github.io/master/img/after.png"></a></a></td>
-            </tr>
-            <tr>
-                <td align="left">2015/3/7</td>
-                <td align="left"><a href="http://onoffmix.com/event/41782">3월의 캐글 뽀개기</a></td>
-                <td align="left">Acquire Valued Shoppers Challenge<br>(<a href="https://docs.google.com/file/d/0Bw594TdiBdAUU3k3cFU5UWNTS0k">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_03_shoppers/00.code">코드</a>)</td>
-                <td align="left">이상열</td>
-                <td align="left"><a href="https://www.facebook.com/groups/psygrammer/permalink/842762182542941/"><img src = "https://raw.githubusercontent.com/KaggleBreak/KaggleBreak.github.io/master/img/after.png"></a></a></td>
-            </tr>
-            <tr>
-                <td align="left">2015/4/11</td>
-                <td align="left"><a href="http://onoffmix.com/event/44062">4월의 캐글 뽀개기</a></td>
-                <td align="left">Personalize Expedia Hotel Searches<br>(<a href="https://docs.google.com/file/d/0Bw594TdiBdAUczk5bXkzdUZYX0E">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/blob/master/2015_04_expedia/00.code">코드</a>)</td>
-                <td align="left">김승욱</td>
-                <td align="left"><a href="https://www.facebook.com/groups/psygrammer/permalink/868340119985147/"><img src = "https://raw.githubusercontent.com/KaggleBreak/KaggleBreak.github.io/master/img/after.png"></a></a></td>
-            </tr>
-            <tr>
-                <td align="left">2015/5/16</td>
-                <td align="left"><a href="http://onoffmix.com/event/46089">5월의 캐글 뽀개기</a></td>
-                <td align="left">Poker Rule Induction<br>(<a href="http://nbviewer.ipython.org/github/KaggleBreak/problems/blob/master/2015_05_poker/syleeie_poker_rule_introduction.ipynb">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_05_poker/code">코드</a>)</td>
-                <td align="left">이상열</td>
-                <td align="left"></td>
-            </tr>
-    
-            <tr>
-                <td align="left">2015/6/13</td>
-                <td align="left"><a href="http://onoffmix.com/event/47822">6월의 캐글 뽀개기</a></td>
-                <td align="left">Bike sharing demand<br>(발표자료, 코드)</td>
-                <td align="left">김승욱</td>
-                <td align="left"></td>
-            </tr>
-            <tr>
-                <td align="left"></td>
-                <td align="left"></td>
-                <td align="left">Bag of Words Meets Bags of Popcorn<br>(<a href="https://github.com/KaggleBreak/problems/tree/master/2015_06_bagofwords">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_06_bagofwords">코드</a>)</td>
-                <td align="left">이상열</td>
-                <td align="left"></td>
-            </tr>
-            <tr>
-                <td align="left"></td>
-                <td align="left"></td>
-                <td align="left">Titanic: Machine Learning from Disaster<br>(<a href="http://soeque1.github.io/r_slide/ML.html#1">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_06_titanic">코드</a>)</td>
-                <td align="left">김형준</td>
-                <td align="left"></td>
-            </tr>
-            <tr>
-                <td align="left">2015/7/18</td>
-                <td align="left"><a href="http://onoffmix.com/event/49454">7월의 캐글 뽀개기</a></td>
-                <td align="left">San Francisco Crime Classification<br>(<a href="https://github.com/KaggleBreak/problems/blob/master/2015_07_sfcrime/kagglebreak_7m_sfcrime.pdf">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_07_sfcrime/code">코드</a>)</td>
-                <td align="left">이상열</td>
-                <td align="left"></td>
-            </tr>
-            <tr>
-                <td align="left">2015/9/19</td>
-                <td align="left"><a href="http://onoffmix.com/event/52024">9월의 캐글 뽀개기</a></td>
-                <td align="left">Coupon Purchase Prediction<br>(<a href="https://github.com/KaggleBreak/problems/blob/master/2015_09_coupon/coupon.pdf">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_09_coupon/code">코드</a>)</td>
-                <td align="left">임동권</td>
-                <td align="left"></td>
-            </tr>
-             <tr>
-                <td align="left"></td>
-                <td align="left"></td>
-                <td align="left">Digit Recognizer<br>(발표자료, 코드)</td>
-                <td align="left">송근창</td>
-                <td align="left"></td>
-            </tr>
-             <tr>
-                <td align="left">2015/10/24</td>
-                <td align="left"><a href="http://onoffmix.com/event/54907">10월의 캐글 뽀개기</a></td>
-                <td align="left">What's Cooking?<br>(<a href="http://nbviewer.ipython.org/github/KaggleBreak/problems/blob/master/2015_10_cooking/kaggle_10m_cooking.ipynb">발표자료</a>, <a href="https://github.com/KaggleBreak/problems/tree/master/2015_10_cooking">코드</a>)</td>
-                <td align="left">이상열</td>
-                <td align="left"></td>
-            </tr>
-        </tbody>
-    </table>
-    </p>
-    </section>
-</div>
+<body>
+
 </body>
 </html>
+
