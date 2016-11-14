@@ -16,7 +16,7 @@
 |:---	        |:---	                                  |:---	    |:---	 |:---	                                               |
 |               | 1부                                    |         |         |                                                    |
 |3시 ~           | 싸이그래머 소개                        | 김무성  |  [커뮤니티](https://www.facebook.com/groups/psygrammer/), [활동 내역](http://psygrammer.github.io/)       |   [slide](https://docs.google.com/presentation/d/1QC7iJqrE_rR7NOmmDLDxir0pTNP87x91BBmNIJW_0w4/edit#slide=id.p)  |
-|                | 스터디1  | [slide](https://drive.google.com/file/d/0Bw594TdiBdAUZnpmVXZ2SlE2Sk0/view)  |
+|                | 스터디1  | [slide](https://drive.google.com/file/d/0Bw594TdiBdAUZnpmVXZ2SlE2Sk0/view)  |                                                        |                                                                                                                 |
 |                | 스터디2  | [slide](https://drive.google.com/file/d/0Bw594TdiBdAUZnpmVXZ2SlE2Sk0/view)  |                                                      |                                                                                                                 |
 |4시 ~           | 다 소개                        | 김무성  |  [커뮤니티](https://www.facebook.com/groups/psygrammer/), [활동 내역](http://psygrammer.github.io/)       |   [slide](https://docs.google.com/presentation/d/1QC7iJqrE_rR7NOmmDLDxir0pTNP87x91BBmNIJW_0w4/edit#slide=id.p)  |
 |                | 스터디1  | [slide](https://drive.google.com/file/d/0Bw594TdiBdAUZnpmVXZ2SlE2Sk0/view)  |                                                      |                                                                                                                 |
