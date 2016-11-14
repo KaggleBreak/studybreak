@@ -272,9 +272,8 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
             var message = messageField.val();
 
             if(username == ""){
-                username = nickNameList.random();
-                todo =  todoList.random();
-                nameField.val(username+" "+todo);
+                username = nickNameList.random() + " " + todo =  todoList.random();
+                nameField.val(username);
             }
 
             //SAVE DATA TO FIREBASE AND EMPTY FIELD
