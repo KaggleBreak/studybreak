@@ -3,8 +3,10 @@
 ![](img/title.jpg)
 
  NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://dev.naver.com/d2)
- * 일시 : 12/3 토, 오후 3시 - 6시 30분 (3시간 30분)
- * 장소 : NAVER D2 STARTUP FACTORY
+ 
+ 일시 : 12/3 토, 오후 3시 - 6시 30분 (3시간 30분)
+ 
+ 장소 : NAVER D2 STARTUP FACTORY
        강남역 2번 출구, 메리츠 타워 16층.
 
 
