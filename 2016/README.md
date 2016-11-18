@@ -16,7 +16,7 @@
 
 |    시간        |      제목                                | 발표자  |  내용   |   발표자료                                         |
 |:---	        |:---	                                  |:---	    |:---	 |:---	                                               |
-|3시 ~         | 각 스터디 그룹 소개                        |   | <ui>  <li>싸이그래머</li> <li>싸이지먼트</li> <li>바이오스핀</li> <li>바벨피쉬</li> <li>데이터그램</li> <li>캐글뽀개기</li> <li>심플랙스 컴플랙서티</li> <li>AI Finance</li> <li>싸이랭</li> </ui> |    |
+|3시 ~         | 각 스터디 그룹 소개                        |   | <ui>  <li>싸이그래머</li> <li>싸이지먼트</li> <li>바이오스핀</li> <li>바벨피쉬</li> <li>데이터그램</li> <li>캐글뽀개기</li> <li>심플랙스 컴플랙서티</li> <li>AI Finance</li> <li>싸이랭</li> </ui> |  <ui>  <li>slide</li> <li>slide</li> <li>slide</li> <li>slide</li> <li>slide</li> <li>slide</li> <li>slide</li> <li>slide</li> <li>싸slide</li> </ui>  |
 |3시 30분 ~     | (특강 1) GNMT로 알아보는 신경망 기반 기계번역       | 고병일 | 구글 신경망 기계번역 시스템 리뷰 |    |
 |4시 ~        | (특강 2) Spark + R        | 지용기 | spark + R 기본 사용법, 특징과 장단점 소개 |    |
 |4시 30분 ~    | 자유토크 & 친목       |  | |    |
