@@ -24,6 +24,6 @@
 |4시 ~        | (특강 2) Spark + R        | 지용기 | spark + R 기본 사용법, 특징과 장단점 소개 | <ui> <li>[자료1](https://drive.google.com/file/d/0Bw594TdiBdAUTGtUOERoOG1ac1E/view) / [code](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2016/presentation/SparkR/spark_R.Rmd)</li> <li>[자료2](https://drive.google.com/file/d/0Bw594TdiBdAUUWt6eGd0Vm5fWDg/view) / [code](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2016/presentation/SparkR/sparklyr.Rmd)</li></ui>  |
 |4시 30분 ~    | 자유토크 & 친목       |  | |    |
 |5시 ~      | (특강 3) Spark를 이용한 분산 컴퓨팅       | 김정주 | 분산환경에서 머신러닝을 운용하기 위한 기반으로 Spark와 클라우드를 활용하는 법 | <ui><li>[자료](https://drive.google.com/file/d/0Bw594TdiBdAUWUMwX2pWb2I2UWc/view) / [code](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2016/presentation/SparkDist/CTR_Prediction.ipynb)</li> </ui> |
-|5시 30분 ~      | (특강 4) 강화학습을 활용한 대화 시스템        | 김영삼  | 대화형 시스템을 구성하기 위해 강화학습을 이용하는 방법 리뷰 | [자료](https://drive.google.com/file/d/0Bw594TdiBdAURFFfazhabUJwOXM/view) |
-|6시 ~ 6시 30분   | 자유토크 & 친목    | | |  |  |
+|5시 30분 ~      | (특강 4) 강화학습을 활용한 대화형 시스템        | 김영삼  | 대화형 시스템을 구성하기 위해 강화학습을 이용하는 방법 리뷰 | <li>[자료](https://drive.google.com/file/d/0Bw594TdiBdAURFFfazhabUJwOXM/view)</li> |
+|6시 ~ 6시 30분   | 자유토크 & 친목    | | |  |  |
 
