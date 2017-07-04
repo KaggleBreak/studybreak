@@ -1,0 +1,1254 @@
+R Tidyverse 이해하기
+========================================================
+author: Sang Yeol Lee
+date: July 04 2017
+width: 1000 
+height: 1200
+transition: linear
+transition-speed: slow
+autosize: true
+
+- 7월 스터디뽀개기 : 캐글뽀개기 - 싸이그래머 콜라보
+- 캐글뽀개기 페이스북 :  <https://www.facebook.com/groups/kagglebreak/>
+- 싸이그래머 페이스북 :  <https://www.facebook.com/groups/psygrammer/>
+
+- github : <https://github.com/KaggleBreak>
+
+- 현재 진행중인 스터디 : 
+
+1) 캐글즐기기 Part 4 (매주 수요일)
+  - [링크](https://github.com/KaggleBreak/analyticstool)
+
+2) 텐서뽀개기 Part1 (격주 화요일)
+  - [링크](https://github.com/KaggleBreak/tensorbreak)
+
+3) 워킹캐글 Part2 (주말반 기획중)
+  - [링크](https://github.com/KaggleBreak/walkingkaggle)
+
+========================================================
+id: slide1
+type: prompt
+## 캐글뽀개기(Kagglebreak)는?
+
+## 취지 : 
+  - 실습형 데이터 분석 스터디 그룹
+  - 캐글(Kaggle) 문제를 풀기 위해서는 데이터 과학을 이해해야 함
+  - 데이터 과학의 관련된 주제를 자유롭게 스터디하는 곳.
+
+<br>
+## Kaggle (https://www.kaggle.com/)
+
+- In 2010, Kaggle was founded as a platform for predictive modelling and analytics competitions on which companies and researchers post their data and statisticians and data miners from all over the world compete to produce the best models. 
+
+- This crowdsourcing approach relies on the fact that there are countless strategies that can be applied to any predictive modelling task and it is impossible to know at the outset which technique or analyst will be most effective. Kaggle also hosts recruiting competitions in which data scientists compete for a chance to interview at leading data science companies like Facebook, Winton Capital, and Walmart.
+
+- On 8 March 2017, Google announced that they were acquiring Kaggle.
+
+
+
+
+
+Show Time (R)
+========================================================
+
+
+```r
+summary(cars)
+```
+
+```
+     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+
+========================================================
+
+## 첫시간 : 설치 (Install)
+[Go to slide 1](#/slide1)
+
+### R install
+(https://cran.rstudio.com/bin/windows/base/)
+* 3.4.1 최신 버전, 되도록 현재 3.4 버전은 다른 패키지와 충돌이 발생할 수 있어서 R 3.3.0 이상을 쓰길 추천함
+
+> R 프로그래밍 언어(줄여서 R)는 통계 계산과 그래픽을 위한 프로그래밍 언어이자 소프트웨어 환경이다. 뉴질랜드 오클랜드 대학의 로버트 젠틀맨(Robert Gentleman)과 로스 이하카(Ross Ihaka)에 의해 시작되어 현재는 R 코어 팀이 개발하고 있다. R은 GPL 하에 배포되는 S 프로그래밍 언어의 구현으로 GNU S라고도 한다. R은 통계 소프트웨어 개발과 자료 분석에 널리 사용되고 있으며, 패키지 개발이 용이하여 통계학자들 사이에서 통계 소프트웨어 개발에 많이 쓰이고 있다.
+
+- R 프로젝트 : <https://www.r-project.org/>
+
+- CRAN 서버 : <https://cran.r-project.org/mirrors.html>
+
+- R 블로거 : <https://www.r-bloggers.com/>
+
+- CRAN Task View
+<https://cran.r-project.org/web/views/>
+
+- MRAN (Microsoft R Application Network)
+<https://mran.microsoft.com/>
+
+========================================================
+
+### 왜 분석도구로 R인가?
+
+- 기존의 통계툴인 SAS, SPSS에 비해서 자유롭게 변형 가능
+
+- R은 데이터 분석에 특화된 프로그래밍 언어이자 오픈소스 패키지의 집합이다.
+- 프로그래밍 언어 - 자유로운 데이터 분석이 가능
+  * Graphical User Interface (GUI) 를 이용한 분석 환경은 처음에는 접근이 쉬우나 확장성에 한계가 있음
+  * 스스로 새로운 기능을 추가하는 것도 자유로움
+
+- 오픈소스 패키지의 집합 (통계, 기계학습, 금융, 생물정보학, 그래픽스)에 이르는 다양한 패키지가 무료로 제공됨.
+
+* 최신 통계 분석 알고리즘의 우선 구현 
+* 빅데이터 처리 : SparkR, Rhive, RHadoop 등
+* 방대한 온라인 자료 : Stack Overflow [link](https://stackoverflow.com/questions/tagged/r)
+
+<br>
+### R Example Project (Fun)
+- Leaflet is one of the most popular open-source JavaScript libraries for interactive maps.
+
+<https://rstudio.github.io/leaflet/>
+
+- This is an introduction to wordcloud2 package. This package provides an HTML5 interface to wordcloud for data visualization. Timdream’s wordcloud2.js is used in this package.
+
+<https://cran.r-project.org/web/packages/wordcloud2/vignettes/wordcloud.html>
+
+
+- ggplot2 is a plotting system for R, based on the grammar of graphics, which tries to take the good parts of base and lattice graphics and none of the bad parts. It takes care of many of the fiddly details that make plotting a hassle (like drawing legends) as well as providing a powerful model of graphics that makes it easy to produce complex multi-layered graphics.
+
+<http://www.r-graph-gallery.com/portfolio/ggplot2-package/>
+
+- Network Analysis and Visualization with R and igraph
+
+<http://kateto.net/networks-r-igraph>
+
+========================================================
+## 설치 (Install)
+### RStudio install
+Desktop
+Open Source License
+: <https://www.rstudio.com/products/rstudio/download/>
+
+> RStudio is a free and open-source integrated development environment (IDE) for R, a programming language for statistical computing and graphics. RStudio was founded by JJ Allaire,[5] creator of the programming language ColdFusion. Hadley Wickham is the Chief Scientist at RStudio
+
+- 다른 IDE Tools sublime <https://www.sublimetext.com/>
+
+![RStudio](./img/rstd.jpg)
+
+
+========================================================
+
+## Tidyverse 이해하기
+
+- R for Data Science (http://r4ds.had.co.nz/)
+  : This book will teach you how to do data science with R
+  : You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualise it and model it. In this book
+  
+
+- The Tidyverse (http://tidyverse.org/)
+  1. dplyr 
+  2. forcats
+  3. ggplot2
+  4. haven
+  5. lubridate
+  6. %>% (magrittr)
+  7. purrr
+  8. readr
+  9. readxl
+  10. stringr
+  11. tibble
+  12. tidyr
+  13. tidyverse
+  
+  
+***
+### 데이터 과학의 절차
+Import -> Tidy -> (Transform -> Visualise -> Model -> Transform...)  -> Communicate
+
+- Tidyverse는 표준 데이터 분석 워크 플로의 추상화, 관련된 다양한 프로세스를 구성, 간소화, 자동화 및 최적화하기 위해 데이터 과학을 지도로 알려줍니다
+
+<img src= 'http://r4ds.had.co.nz/diagrams/data-science.png'>
+  
+![Tidyverse](./img/tidyverse_1.png)
+
+
+Tibbles
+========================================================
+
+- Tibbles는 게으르고 뻔뻔한 data.frames, 데이터 프레임을 바꿔서 사용 
+- Tibbles은 올바른 R 변수 이름이 아닌 열 이름을 가질 수 있습니다 (:),' '(space), 2000 : number)
+- Tibbles에는 처음 10 개 행만 표시되고 화면에 표시되는 모든 열을 보여주는 세련된 인쇄 방법이 있습니다. * print(n = 10, width = Inf)
+- options(tibble.print_max = n, tibble.print_min = m)
+
+
+
+```r
+#install.packages("tidyverse")
+#install.packages(c("nycflights13", "gapminder", "Lahman"))
+
+library(tidyverse)
+library(nycflights13)
+
+# nycflights13 패키지의 데이터를 사용
+#  이 데이터 프레임에는 2013 년에 뉴욕에서 출발 한 336,776 편의 항공편이 모두 포함되어 있습니다.이 데이터는 미국 교통 통계 국 에서 제공 한 것으로 문서화되어 ?flights있습니다.
+
+flights
+```
+
+```
+# A tibble: 336,776 × 19
+    year month   day dep_time sched_dep_time dep_delay arr_time
+   <int> <int> <int>    <int>          <int>     <dbl>    <int>
+1   2013     1     1      517            515         2      830
+2   2013     1     1      533            529         4      850
+3   2013     1     1      542            540         2      923
+4   2013     1     1      544            545        -1     1004
+5   2013     1     1      554            600        -6      812
+6   2013     1     1      554            558        -4      740
+7   2013     1     1      555            600        -5      913
+8   2013     1     1      557            600        -3      709
+9   2013     1     1      557            600        -3      838
+10  2013     1     1      558            600        -2      753
+# ... with 336,766 more rows, and 12 more variables: sched_arr_time <int>,
+#   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
+#   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
+#   minute <dbl>, time_hour <dttm>
+```
+
+### Tibble 변수의 유형
+- int 정수를 나타냅니다.
+- dbl doubles or real numbers를 나타냅니다.
+- chr 문자 벡터 또는 문자열을 나타냅니다.
+- dttm 날짜 - 시간 (날짜 + 시간)을 나타냅니다.
+- lgl 논리적인 것, TRUE 또는 FALSE.
+- fctr R은 고정 된 값으로 범주 형 변수를 나타내는 데 사용되는 요소를 나타냅니다.
+- date 날짜를 나타냅니다.
+
+
+dplyr (1)
+========================================================
+
+- dplyr은 일반적인 데이터 조작 문제를 해결하는 데 도움이 되는 일관적인 verb 세트를 제공하면서 데이터 조작의 문법입니다.
+
+1. mutate() 기존 변수의 함수 인 새로운 변수를 추가합니다.
+2. select() 변수 이름을 기반으로 변수를 선택합니다.
+3. filter() 해당 값을 기준으로 사례를 선택합니다.
+4. summarise() 여러 값을 하나의 요약으로 줄입니다.
+5. arrange() 행의 순서를 변경합니다.
+
+
+```r
+library(tidyverse)
+
+#filter 기능
+filter(flights, month == 1, day == 1)
+```
+
+```
+# A tibble: 842 × 19
+    year month   day dep_time sched_dep_time dep_delay arr_time
+   <int> <int> <int>    <int>          <int>     <dbl>    <int>
+1   2013     1     1      517            515         2      830
+2   2013     1     1      533            529         4      850
+3   2013     1     1      542            540         2      923
+4   2013     1     1      544            545        -1     1004
+5   2013     1     1      554            600        -6      812
+6   2013     1     1      554            558        -4      740
+7   2013     1     1      555            600        -5      913
+8   2013     1     1      557            600        -3      709
+9   2013     1     1      557            600        -3      838
+10  2013     1     1      558            600        -2      753
+# ... with 832 more rows, and 12 more variables: sched_arr_time <int>,
+#   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
+#   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
+#   minute <dbl>, time_hour <dttm>
+```
+
+```r
+#arrange 기능
+arrange(flights, year, month, day)
+```
+
+```
+# A tibble: 336,776 × 19
+    year month   day dep_time sched_dep_time dep_delay arr_time
+   <int> <int> <int>    <int>          <int>     <dbl>    <int>
+1   2013     1     1      517            515         2      830
+2   2013     1     1      533            529         4      850
+3   2013     1     1      542            540         2      923
+4   2013     1     1      544            545        -1     1004
+5   2013     1     1      554            600        -6      812
+6   2013     1     1      554            558        -4      740
+7   2013     1     1      555            600        -5      913
+8   2013     1     1      557            600        -3      709
+9   2013     1     1      557            600        -3      838
+10  2013     1     1      558            600        -2      753
+# ... with 336,766 more rows, and 12 more variables: sched_arr_time <int>,
+#   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
+#   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
+#   minute <dbl>, time_hour <dttm>
+```
+
+dplyr (2)
+========================================================
+
+
+```r
+#select 기능, ends_with (끝나는 이름과 일치하는 컬럼 가져오기)
+
+flights_sml <- select(flights, 
+  year:day, 
+  ends_with("delay"), 
+  distance, 
+  air_time
+)
+
+flights_sml
+```
+
+```
+# A tibble: 336,776 × 7
+    year month   day dep_delay arr_delay distance air_time
+   <int> <int> <int>     <dbl>     <dbl>    <dbl>    <dbl>
+1   2013     1     1         2        11     1400      227
+2   2013     1     1         4        20     1416      227
+3   2013     1     1         2        33     1089      160
+4   2013     1     1        -1       -18     1576      183
+5   2013     1     1        -6       -25      762      116
+6   2013     1     1        -4        12      719      150
+7   2013     1     1        -5        19     1065      158
+8   2013     1     1        -3       -14      229       53
+9   2013     1     1        -3        -8      944      140
+10  2013     1     1        -2         8      733      138
+# ... with 336,766 more rows
+```
+
+```r
+#mutate 기능
+mutate(flights_sml,
+  gain = arr_delay - dep_delay,
+  hours = air_time / 60,
+  gain_per_hour = gain / hours
+)
+```
+
+```
+# A tibble: 336,776 × 10
+    year month   day dep_delay arr_delay distance air_time  gain     hours
+   <int> <int> <int>     <dbl>     <dbl>    <dbl>    <dbl> <dbl>     <dbl>
+1   2013     1     1         2        11     1400      227     9 3.7833333
+2   2013     1     1         4        20     1416      227    16 3.7833333
+3   2013     1     1         2        33     1089      160    31 2.6666667
+4   2013     1     1        -1       -18     1576      183   -17 3.0500000
+5   2013     1     1        -6       -25      762      116   -19 1.9333333
+6   2013     1     1        -4        12      719      150    16 2.5000000
+7   2013     1     1        -5        19     1065      158    24 2.6333333
+8   2013     1     1        -3       -14      229       53   -11 0.8833333
+9   2013     1     1        -3        -8      944      140    -5 2.3333333
+10  2013     1     1        -2         8      733      138    10 2.3000000
+# ... with 336,766 more rows, and 1 more variables: gain_per_hour <dbl>
+```
+
+dplyr (3)
+========================================================
+
+
+```r
+#group_by, summarise 기능
+flights %>% 
+  group_by(year, month, day) %>% 
+  summarise(mean = mean(dep_delay))
+```
+
+```
+Source: local data frame [365 x 4]
+Groups: year, month [?]
+
+    year month   day  mean
+   <int> <int> <int> <dbl>
+1   2013     1     1    NA
+2   2013     1     2    NA
+3   2013     1     3    NA
+4   2013     1     4    NA
+5   2013     1     5    NA
+6   2013     1     6    NA
+7   2013     1     7    NA
+8   2013     1     8    NA
+9   2013     1     9    NA
+10  2013     1    10    NA
+# ... with 355 more rows
+```
+
+```r
+#pipe : The pipe, %>%, comes from the magrittr package
+#파이프의 요점은 읽고 이해하기 쉬운 방식으로 코드를 작성하는 것입니다.
+
+flights %>% 
+  group_by(dest) %>% 
+  filter(n() > 365) %>% 
+  filter(arr_delay > 0) %>% 
+  mutate(prop_delay = arr_delay / sum(arr_delay)) %>% 
+  select(year:day, dest, arr_delay, prop_delay)
+```
+
+```
+Source: local data frame [131,106 x 6]
+Groups: dest [77]
+
+    year month   day  dest arr_delay   prop_delay
+   <int> <int> <int> <chr>     <dbl>        <dbl>
+1   2013     1     1   IAH        11 1.106740e-04
+2   2013     1     1   IAH        20 2.012255e-04
+3   2013     1     1   MIA        33 2.350026e-04
+4   2013     1     1   ORD        12 4.239594e-05
+5   2013     1     1   FLL        19 9.377853e-05
+6   2013     1     1   ORD         8 2.826396e-05
+7   2013     1     1   LAX         7 3.444441e-05
+8   2013     1     1   DFW        31 2.817951e-04
+9   2013     1     1   ATL        12 3.996017e-05
+10  2013     1     1   DTW        16 1.157257e-04
+# ... with 131,096 more rows
+```
+
+
+forcats
+========================================================
+
+- R은 카테고리 변수를 처리하기 위해 요인(factor)을 사용 합니다. 변수는 고정된 알려진 값 집합을 가지고 있습니다. 
+- forcats 패키지는 문자 벡터의 순서를 재정의하려는 경우 유용한 패키지.
+
+
+
+```r
+library(forcats) #명시적으로 로딩해야 함
+
+x1 <- c("Dec", "Apr", "Jan", "Mar")
+month_levels <- c(
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+)
+
+parse_factor(x1, month_levels)
+```
+
+```
+[1] Dec Apr Jan Mar
+Levels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+```
+
+```r
+x2 <- c("Dec", "Apr", "Jam", "Mar")
+
+factor(x2, month_levels)
+```
+
+```
+[1] Dec  Apr  <NA> Mar 
+Levels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+```
+
+```r
+parse_factor(x2, month_levels)
+```
+
+```
+[1] Dec  Apr  <NA> Mar 
+attr(,"problems")
+# A tibble: 1 × 4
+    row   col           expected actual
+  <int> <int>              <chr>  <chr>
+1     3    NA value in level set    Jam
+Levels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+```
+
+```r
+sort(x1)
+```
+
+```
+[1] "Apr" "Dec" "Jan" "Mar"
+```
+
+```r
+f2 <- x1 %>% factor() %>% fct_inorder()
+f2
+```
+
+```
+[1] Dec Apr Jan Mar
+Levels: Dec Apr Jan Mar
+```
+
+
+ggplot2
+========================================================
+
+- “The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey
+
+- gplot2는 그래프의 기술과 구축을 위한 일관된 시스템인 그래픽 의 문법을 구현합니다 
+
+
+
+```r
+library(Lahman)
+batting <- as_tibble(Lahman::Batting)
+
+#Batting table - batting statistics,  AB : At Bats, Hits: times reached base because of a batted, fair ball without error by the defense
+
+batting %>% 
+  group_by(playerID) %>% 
+  summarise(
+    ba = sum(H, na.rm = TRUE) / sum(AB, na.rm = TRUE),
+    ab = sum(AB, na.rm = TRUE)
+  ) %>%
+  filter(ab > 100) %>% 
+  ggplot(mapping = aes(x = ab, y = ba)) +
+    geom_point() + 
+    geom_smooth(se = FALSE)
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" style="display: block; margin: auto;" />
+
+
+haven
+========================================================
+
+- Haven은 ReadStat C 라이브러리 를 래핑하여 다른 통계 패키지에서 사용되는 다양한 데이터 형식을 읽고 쓸 수있게 합니다. 
+- SAS, read_sas() : .sas7bdat+ .sas7bcat, read_xpt()
+- SPSS, read_sav(), .sav, read_por()
+- Stata, read_dta() .dta
+
+
+
+```r
+library(haven)
+
+# SAS
+#read_sas("mtcars.sas7bdat")
+#write_sas(mtcars, "mtcars.sas7bdat")
+
+# SPSS
+#read_sav("mtcars.sav")
+#write_sav(mtcars, "mtcars.sav")
+
+# Stata
+#read_dta("mtcars.dta")
+#write_dta(mtcars, "mtcars.dta")
+```
+
+lubridate
+========================================================
+
+- 날짜 - 시간에 대한 R 명령은 일반적으로 사용하기가 쉽지 않으며 사용되는 날짜 - 시간 객체의 유형에 따라 변경됩니다. 
+
+- 또한, 우리가 날짜와 함께 사용하는 메소드는 시간대, 윤년, 일광 절약 시간 및 기타 시간 관련 단점에 대해 견고해야하며, 일부 상황에서는 R이 이러한 기능을 갖추고 있지 않습니다. 
+
+
+```r
+library(lubridate)
+ymd(20101215)
+```
+
+```
+[1] "2010-12-15"
+```
+
+```r
+mdy("4/1/17")
+```
+
+```
+[1] "2017-04-01"
+```
+
+```r
+bday <- dmy("14/10/1979")
+month(bday)
+```
+
+```
+[1] 10
+```
+
+```r
+wday(bday, label = TRUE)
+```
+
+```
+[1] Sun
+Levels: Sun < Mon < Tues < Wed < Thurs < Fri < Sat
+```
+
+```r
+year(bday) <- 2016
+wday(bday, label = TRUE)
+```
+
+```
+[1] Fri
+Levels: Sun < Mon < Tues < Wed < Thurs < Fri < Sat
+```
+
+```r
+yday(bday)
+```
+
+```
+[1] 288
+```
+
+```r
+time <- ymd_hms("2010-12-13 15:30:30")
+time
+```
+
+```
+[1] "2010-12-13 15:30:30 UTC"
+```
+
+```r
+h_age <- today() - ymd(19791014)
+h_age
+```
+
+```
+Time difference of 13778 days
+```
+
+```r
+tomorrow <- today() + ddays(1)
+last_year <- today() - dyears(1)
+
+# Changes printing
+with_tz(time, "America/Chicago")
+```
+
+```
+[1] "2010-12-13 09:30:30 CST"
+```
+
+```r
+#> [1] "2010-12-13 09:30:30 CST"
+
+# Changes time
+force_tz(time, "America/Chicago")
+```
+
+```
+[1] "2010-12-13 15:30:30 CST"
+```
+
+```r
+#> [1] "2010-12-13 15:30:30 CST"
+```
+
+magrittr
+========================================================
+
+- 데이터 조작의 왼쪽에서 오른쪽으로의 구조화 시퀀스 (안과 밖에서 반대)
+- 중첩된 함수 호출 방지,
+- 지역 변수 및 함수 정의에 대한 필요성 최소화
+- 일련의 작업 중 어느 단계 에나 쉽게 단계를 추가 할 수 있습니다.
+
+
+- x %>% f ~와 동등하다 f(x)
+- x %>% f(y) ~와 동등하다 f(x, y)
+- x %>% f %>% g %>% h ~와 동등하다 h(g(f(x)))
+
+- Pipe을 사용하지 않을 때 
+  - Your pipes are longer than (say) ten steps.
+  - 여러 개의 입력 또는 출력이 있습니다. 하나의 기본 객체가 변환되지 않지만 둘 이상의 객체가 함께 결합되는 경우에는 파이프를 사용하지 마십시오.
+
+
+
+```r
+library(magrittr)
+
+iris %>%
+  subset(Sepal.Length > mean(Sepal.Length)) %$%
+  cor(Sepal.Length, Sepal.Width)
+```
+
+```
+[1] 0.3361992
+```
+
+```r
+data.frame(z = rnorm(100)) %$%
+  ts.plot(z)
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-11-1.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" style="display: block; margin: auto;" />
+
+```r
+# %T>%
+rnorm(100) %>%
+  matrix(ncol = 2) %T>%
+  plot() %>%
+  str()
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-11-2.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" style="display: block; margin: auto;" />
+
+```
+ num [1:50, 1:2] 0.493 -0.307 1.797 1.855 -1.638 ...
+```
+
+purrr
+========================================================
+
+- purrr은 함수 및 벡터 작업을 위한 완전하고 일관된 도구 세트를 제공하여 R의 함수 프로그래밍 (FP) 툴킷을 향상시킵니다. 
+
+- 이전에 FP에 대해 들어 본 적이 없다면 시작하기 가장 좋은 곳은 map() 함수는 많은 for 루프를 더 간결하고 읽기 쉬운 코드로 대체 할 수있는 함수 계열입니다 . 
+
+
+```r
+library(purrr)
+
+mtcars %>%
+  split(.$cyl) %>% # from base R
+  map(~ lm(mpg ~ wt, data = .)) %>%
+  map(summary) %>%
+  map_dbl("r.squared")
+```
+
+```
+        4         6         8 
+0.5086326 0.4645102 0.4229655 
+```
+
+- Functional Programming in R [https://bookdown.org/rdpeng/RProgDA/functional-programming.html]
+
+
+readr
+========================================================
+
+- readr의 목표는 사각형 데이터 (예 : csv, tsv 및 fwf)를 빠르고 쉽게 읽을 수있는 방법을 제공하는 것입니다. 
+
+  - read_csv(): 쉼표로 구분 된 (CSV) 파일
+  - read_tsv(): 탭으로 구분 된 파일
+  - read_delim(): 일반 구분 파일
+  - read_fwf(): 고정 너비 파일
+  - read_table(): 컬럼이 공백으로 구분되는 표 파일.
+  - read_log(): 웹 로그 파일
+
+
+```r
+library(tidyverse)
+mtcars <- read_csv(readr_example("mtcars.csv"), col_types = 
+  cols(
+    mpg = col_double(),
+    cyl = col_integer(),
+    disp = col_double(),
+    hp = col_integer(),
+    drat = col_double(),
+    vs = col_integer(),
+    wt = col_double(),
+    qsec = col_double(),
+    am = col_integer(),
+    gear = col_integer(),
+    carb = col_integer()
+  )
+)
+mtcars
+```
+
+```
+# A tibble: 32 × 11
+     mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
+   <dbl> <int> <dbl> <int> <dbl> <dbl> <dbl> <int> <int> <int> <int>
+1   21.0     6 160.0   110  3.90 2.620 16.46     0     1     4     4
+2   21.0     6 160.0   110  3.90 2.875 17.02     0     1     4     4
+3   22.8     4 108.0    93  3.85 2.320 18.61     1     1     4     1
+4   21.4     6 258.0   110  3.08 3.215 19.44     1     0     3     1
+5   18.7     8 360.0   175  3.15 3.440 17.02     0     0     3     2
+6   18.1     6 225.0   105  2.76 3.460 20.22     1     0     3     1
+7   14.3     8 360.0   245  3.21 3.570 15.84     0     0     3     4
+8   24.4     4 146.7    62  3.69 3.190 20.00     1     0     4     2
+9   22.8     4 140.8    95  3.92 3.150 22.90     1     0     4     2
+10  19.2     6 167.6   123  3.92 3.440 18.30     1     0     4     4
+# ... with 22 more rows
+```
+
+- Use a consistent naming scheme for the parameters (e.g. and not and).
+
+- 훨씬 빠릅니다 (최대 10 배).
+
+- 기본적으로 문자열을 그대로 두고 공통 날짜 / 시간 형식을 자동으로 구문 분석합니다.
+
+- 로드하는 데 시간이 오래 걸리는 경우 유용한 진행률 표시 줄을 프린트
+
+- 모든 함수는 현재 로케일에 관계없이 똑같은 방식으로 작동합니다. 미국 중심의 기본값을 재정의하려면 다음을 사용하십시오 locale().
+
+readxl
+========================================================
+
+- readxl 패키지를 사용하면 Excel 및 R에서 데이터를 쉽게 가져올 수 있습니다. 기존 패키지 (예 : gdata, xlsx, xlsReadWrite)와 비교하면 readxl에는 외부 종속성이 없으므로 모든 운영 체제에서 설치하고 사용하기 쉽습니다.
+
+- readxl은 레거시 .xls형식과 최신 xml 기반 .xlsx형식을 모두 지원 합니다. libxls C 라이브러리를 지원하는 데 사용되는 .xls기본 바이너리 형식의 복잡성 떨어져 많은 추상화. 구문 분석 .xlsx을 위해 RapidXML C ++ 라이브러리를 사용합니다 .
+
+
+```r
+library(readxl)
+sample <- system.file("extdata", "datasets.xlsx", package = "readxl")
+
+read_excel(sample)
+```
+
+```
+# A tibble: 150 × 5
+   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+          <dbl>       <dbl>        <dbl>       <dbl>   <chr>
+1           5.1         3.5          1.4         0.2  setosa
+2           4.9         3.0          1.4         0.2  setosa
+3           4.7         3.2          1.3         0.2  setosa
+4           4.6         3.1          1.5         0.2  setosa
+5           5.0         3.6          1.4         0.2  setosa
+6           5.4         3.9          1.7         0.4  setosa
+7           4.6         3.4          1.4         0.3  setosa
+8           5.0         3.4          1.5         0.2  setosa
+9           4.4         2.9          1.4         0.2  setosa
+10          4.9         3.1          1.5         0.1  setosa
+# ... with 140 more rows
+```
+
+```r
+excel_sheets(sample)
+```
+
+```
+[1] "iris"     "mtcars"   "chickwts" "quakes"  
+```
+
+```r
+read_excel(sample, sheet = "chickwts")
+```
+
+```
+# A tibble: 71 × 2
+   weight      feed
+    <dbl>     <chr>
+1     179 horsebean
+2     160 horsebean
+3     136 horsebean
+4     227 horsebean
+5     217 horsebean
+6     168 horsebean
+7     108 horsebean
+8     124 horsebean
+9     143 horsebean
+10    140 horsebean
+# ... with 61 more rows
+```
+
+```r
+read_excel(sample, sheet = 4)
+```
+
+```
+# A tibble: 1,000 × 5
+      lat   long depth   mag stations
+    <dbl>  <dbl> <dbl> <dbl>    <dbl>
+1  -20.42 181.62   562   4.8       41
+2  -20.62 181.03   650   4.2       15
+3  -26.00 184.10    42   5.4       43
+4  -17.97 181.66   626   4.1       19
+5  -20.42 181.96   649   4.0       11
+6  -19.68 184.31   195   4.0       12
+7  -11.70 166.10    82   4.8       43
+8  -28.11 181.93   194   4.4       15
+9  -28.74 181.74   211   4.7       35
+10 -17.47 179.59   622   4.3       19
+# ... with 990 more rows
+```
+
+```r
+read_excel(sample, range = "C1:E4")
+```
+
+```
+# A tibble: 3 × 3
+  Petal.Length Petal.Width Species
+         <dbl>       <dbl>   <chr>
+1          1.4         0.2  setosa
+2          1.4         0.2  setosa
+3          1.3         0.2  setosa
+```
+
+stringr
+========================================================
+
+- stringr 패키지는 문자열을 쉽게 처리 할 수 있도록 설계된 응집력 있는 함수 세트를 제공합니다.
+
+- stringr은 ICU C 라이브러리를 사용하여 일반적인 문자열 조작을 빠르고 정확하게 구현 하는 stringi 위에 구축됩니다 . stringr은 가장 중요하고 일반적으로 사용되는 문자열 조작 함수에 초점을 맞추는 반면 stringi는 상상할 수있는 거의 모든 것을 포함하는 포괄적 인 세트를 제공합니다.
+
+
+```r
+library(stringr)
+x <- c("why", "video", "cross", "extra", "deal", "authority")
+str_length(x) 
+```
+
+```
+[1] 3 5 5 5 4 9
+```
+
+```r
+str_c(x, collapse = ", ")
+```
+
+```
+[1] "why, video, cross, extra, deal, authority"
+```
+
+```r
+str_sub(x, 1, 2)
+```
+
+```
+[1] "wh" "vi" "cr" "ex" "de" "au"
+```
+
+```r
+#대부분의 문자열 함수는 텍스트 패턴을 설명하기위한 간결한 언어 인 정규 표현식과 함께 작동합니다. 예를 들어, 정규식 "[aeiou]"은 모음 인 모든 단일 문자를 찾습니다.
+str_subset(x, "[aeiou]")
+```
+
+```
+[1] "video"     "cross"     "extra"     "deal"      "authority"
+```
+
+```r
+str_count(x, "[aeiou]")
+```
+
+```
+[1] 0 3 1 2 2 4
+```
+
+```r
+str_detect(x, "[aeiou]")
+```
+
+```
+[1] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE
+```
+
+```r
+str_locate(x, "[aeiou]")
+```
+
+```
+     start end
+[1,]    NA  NA
+[2,]     2   2
+[3,]     3   3
+[4,]     1   1
+[5,]     2   2
+[6,]     1   1
+```
+
+```r
+str_extract(x, "[aeiou]")
+```
+
+```
+[1] NA  "i" "o" "e" "e" "a"
+```
+
+```r
+str_replace(x, "[aeiou]", "?")
+```
+
+```
+[1] "why"       "v?deo"     "cr?ss"     "?xtra"     "d?al"      "?uthority"
+```
+
+```r
+str_split(c("a,b", "c,d,e"), ",")
+```
+
+```
+[[1]]
+[1] "a" "b"
+
+[[2]]
+[1] "c" "d" "e"
+```
+
+tidy(1)
+========================================================
+
+- The goal of tidyr is to help you create tidy data.
+
+- gather() 여러 개의 열을 가져 와서 키 - 값 쌍으로 수집하여 "넓은"데이터를 길게 만듭니다.
+
+
+```r
+library(tidyr)
+library(dplyr)
+
+stocks <- data_frame(
+  time = as.Date('2009-01-01') + 0:9,
+  X = rnorm(10, 0, 1),
+  Y = rnorm(10, 0, 2),
+  Z = rnorm(10, 0, 4)
+)
+
+stocks %>% gather(stock, price, -time)
+```
+
+```
+# A tibble: 30 × 3
+         time stock       price
+       <date> <chr>       <dbl>
+1  2009-01-01     X -0.07628595
+2  2009-01-02     X -0.02717991
+3  2009-01-03     X  1.66036016
+4  2009-01-04     X -0.78156880
+5  2009-01-05     X -1.64259370
+6  2009-01-06     X  1.06976300
+7  2009-01-07     X -2.13784340
+8  2009-01-08     X -1.14265428
+9  2009-01-09     X  0.60946551
+10 2009-01-10     X  1.96340047
+# ... with 20 more rows
+```
+
+```r
+mini_iris <-
+  iris %>%
+  group_by(Species) %>%
+  slice(1)
+
+mini_iris %>% gather(key = flower_att, value = measurement, -Species)
+```
+
+```
+Source: local data frame [12 x 3]
+Groups: Species [3]
+
+      Species   flower_att measurement
+       <fctr>        <chr>       <dbl>
+1      setosa Sepal.Length         5.1
+2  versicolor Sepal.Length         7.0
+3   virginica Sepal.Length         6.3
+4      setosa  Sepal.Width         3.5
+5  versicolor  Sepal.Width         3.2
+6   virginica  Sepal.Width         3.3
+7      setosa Petal.Length         1.4
+8  versicolor Petal.Length         4.7
+9   virginica Petal.Length         6.0
+10     setosa  Petal.Width         0.2
+11 versicolor  Petal.Width         1.4
+12  virginica  Petal.Width         2.5
+```
+
+tidy(2)
+========================================================
+
+- spread(). 두 개의 열 (키 및 값)을 사용하고 여러 열로 퍼지면 "긴"데이터가 더 넓어집니다.
+
+
+```r
+stocksm <- stocks %>% gather(stock, price, -time)
+stocksm
+```
+
+```
+# A tibble: 30 × 3
+         time stock       price
+       <date> <chr>       <dbl>
+1  2009-01-01     X -0.07628595
+2  2009-01-02     X -0.02717991
+3  2009-01-03     X  1.66036016
+4  2009-01-04     X -0.78156880
+5  2009-01-05     X -1.64259370
+6  2009-01-06     X  1.06976300
+7  2009-01-07     X -2.13784340
+8  2009-01-08     X -1.14265428
+9  2009-01-09     X  0.60946551
+10 2009-01-10     X  1.96340047
+# ... with 20 more rows
+```
+
+```r
+stocksm %>% spread(stock, price)
+```
+
+```
+# A tibble: 10 × 4
+         time           X          Y          Z
+*      <date>       <dbl>      <dbl>      <dbl>
+1  2009-01-01 -0.07628595 -1.1202480  5.6732925
+2  2009-01-02 -0.02717991 -1.3284549  4.8551812
+3  2009-01-03  1.66036016  2.7888930  2.3343067
+4  2009-01-04 -0.78156880 -0.2029881  5.9908608
+5  2009-01-05 -1.64259370 -1.4231483  5.6110080
+6  2009-01-06  1.06976300 -1.0215021  0.3747096
+7  2009-01-07 -2.13784340  0.6472273  3.9794081
+8  2009-01-08 -1.14265428  1.4249315  2.3501897
+9  2009-01-09  0.60946551  0.3341988  6.9444750
+10 2009-01-10  1.96340047  1.0371467 -1.6025150
+```
+
+
+tidyquant (1) (Tidy Time Series Analysis)
+========================================================
+
+- Reference : https://www.r-bloggers.com/tidy-time-series-analysis-part-1/
+
+- xts, zoo그리고 TTR패키지는 시계열 작업의 훌륭한 기능을 가지고 있습니다. 
+- 패키지의 인기도 추이를 검사하는 좋은 방법은 CRAN 다운로드를 검사하는 것입니다. 다운로드 숫자를 시계열 시각화 하는 것이 목표
+
+
+```r
+#install.packages('tidyquant')
+#install.packages('cranlogs')
+library(tidyquant)
+library(cranlogs)
+
+pkgs <- c(
+    "tidyr", "lubridate", "dplyr", 
+    "broom", "tidyquant", "ggplot2", "purrr", 
+    "stringr", "knitr"
+    )
+
+tidyverse_downloads <- cran_downloads(
+    packages = pkgs, 
+    from     = "2017-01-01", 
+    to       = "2017-06-30") %>%
+    tibble::as_tibble() %>%
+    group_by(package)
+
+tidyverse_downloads %>%
+    ggplot(aes(x = date, y = count, color = package)) +
+    geom_point() +
+    labs(title = "tidyverse packages: Daily downloads", x = "") +
+    facet_wrap(~ package, ncol = 3, scale = "free_y") +
+    scale_color_tq() +
+    theme_tq() +
+    theme(legend.position="none")
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-18-1.png" title="plot of chunk unnamed-chunk-18" alt="plot of chunk unnamed-chunk-18" style="display: block; margin: auto;" />
+
+
+tidyquant (2) (Tidy Time Series Analysis)
+========================================================
+
+- tq_transmute() 함수를 사용하여 시계열 함수를 "tidy" 방식으로 적용 할 것입니다. 
+
+
+```r
+mean_tidyverse_downloads_w <- tidyverse_downloads %>%
+    tq_transmute(
+        select     = count,
+        mutate_fun = apply.weekly, 
+        FUN        = mean,
+        na.rm      = TRUE,
+        col_rename = "mean_count"
+    )
+
+mean_tidyverse_downloads_w %>%
+    ggplot(aes(x = date, y = mean_count, color = package)) +
+    geom_point() +
+    geom_smooth(method = "loess") + 
+    labs(title = "tidyverse packages: Average daily downloads by week", x = "", 
+         y = "Mean Daily Downloads by Week") +
+    facet_wrap(~ package, ncol = 3, scale = "free_y") +
+    expand_limits(y = 0) + 
+    scale_color_tq() +
+    theme_tq() +
+    theme(legend.position="none")
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-19-1.png" title="plot of chunk unnamed-chunk-19" alt="plot of chunk unnamed-chunk-19" style="display: block; margin: auto;" />
+
+tidyquant (3) (Tidy Time Series Analysis)
+========================================================
+
+- 사용자 정의 기능 : Weekly aggregation beyond a single statistic
+
+
+```r
+custom_stat_fun <- function(x, na.rm = TRUE, ...) {
+    c(mean    = mean(x, na.rm = na.rm),
+      stdev   = sd(x, na.rm = na.rm),
+      quantile(x, na.rm = na.rm, ...)) 
+}
+
+probs <- c(0, 0.025, 0.25, 0.5, 0.75, 0.975, 1)
+
+stats_tidyverse_downloads_w <- tidyverse_downloads %>%
+    tq_transmute(
+        select = count,
+        mutate_fun = apply.weekly, 
+        FUN = custom_stat_fun,
+        na.rm = TRUE,
+        probs = probs
+    )
+
+stats_tidyverse_downloads_w %>%
+    ggplot(aes(x = date, y = `50%`, color = package)) +
+    # Ribbon
+    geom_ribbon(aes(ymin = `25%`, ymax = `75%`), 
+                color = palette_light()[[1]], fill = palette_light()[[1]], alpha = 0.5) +
+    # Points
+    geom_point() +
+    geom_smooth(method = "loess", se = FALSE) + 
+    # Aesthetics
+    labs(title = "tidyverse packages: Median daily downloads by week", x = "",
+         subtitle = "Range of 1st and 3rd quartile to show volatility",
+         y = "Median Daily Downloads By Week") +
+    facet_wrap(~ package, ncol = 3, scale = "free_y") +
+    expand_limits(y = 0) + 
+    scale_color_tq(theme = "dark") +
+    theme_tq() +
+    theme(legend.position="none")
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-20-1.png" title="plot of chunk unnamed-chunk-20" alt="plot of chunk unnamed-chunk-20" style="display: block; margin: auto;" />
+
+tidyquant (4) (Tidy Time Series Analysis)
+========================================================
+
+
+```r
+stats_tidyverse_downloads_w %>%
+    ggplot(aes(x = stdev, y = mean, color = package)) +
+    geom_point() +
+    geom_smooth(method = "lm") + 
+    labs(title = "tidyverse packages: Mean vs standard deviation of daily downloads by week") +
+    facet_wrap(~ package, ncol = 3, scale = "free") +
+    scale_color_tq() +
+    theme_tq() +
+    theme(legend.position="none")
+```
+
+<img src="2017_7_studybreak_R-figure/unnamed-chunk-21-1.png" title="plot of chunk unnamed-chunk-21" alt="plot of chunk unnamed-chunk-21" style="display: block; margin: auto;" />
+
+
+Tidyverse를 공부하면서
+========================================================
+
+- tidyverse는 공통된 디자인 철학을 공유하는 데이터 조작, 탐색 및 시각화를위한 일관된 패키지 시스템
+
+-  대부분 Hadley Wickham 자신에 의해 개발되었지만, 현재 그들은 여러 공헌자들에 의해 확장되고 있습니다.
+
+- The tidyverse style guide [http://style.tidyverse.org/]
+
+- 데이터 분석은 '가설 생성', '가설 확인'의 과정.
+
+<img src ='https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png'>
+
+- 개렛 그레 몰드, 해들리 위컴에게 감사의 말을 전함. 
+
+- 데이터 과학의 도구로서 R은 패키지들의 집합으로 기본 함수보다 여러가지 형태로 함수가 존재함. base 함수의 이해가 끝났다면  tidyverse, caret 두 가지만 제대로 배운다면 데이터 전처리, 시각화, 모델링, 평가까지 한번에 할 수 있음
+
+
