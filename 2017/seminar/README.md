@@ -11,3 +11,4 @@
 2) GPU와 딥러닝 트렌드 - 한재근 
 
 3) R Tidyverse 이해하기 - 이상열
+[발표자료](https://github.com/KaggleBreak/studybreak/tree/gh-pages/2017/seminar/R_tidyverse)
