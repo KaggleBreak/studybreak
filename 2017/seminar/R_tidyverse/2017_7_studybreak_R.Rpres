@@ -2,8 +2,8 @@ R Tidyverse 이해하기
 ========================================================
 author: Sang Yeol Lee
 date: `r format(Sys.Date(), format="%B %d %Y")`
-width: 1000 
-height: 1200
+width: 1800 
+height: 2600
 transition: linear
 transition-speed: slow
 autosize: true
@@ -685,7 +685,6 @@ stats_tidyverse_downloads_w %>%
     theme(legend.position="none")
 
 ```
-
 
 Tidyverse를 공부하면서
 ========================================================

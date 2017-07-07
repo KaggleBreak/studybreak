@@ -1,9 +1,9 @@
 R Tidyverse 이해하기
 ========================================================
 author: Sang Yeol Lee
-date: July 04 2017
-width: 1000 
-height: 1200
+date: July 07 2017
+width: 1800 
+height: 2600
 transition: linear
 transition-speed: slow
 autosize: true
@@ -201,18 +201,18 @@ flights
 ```
 
 ```
-# A tibble: 336,776 × 19
+# A tibble: 336,776 x 19
     year month   day dep_time sched_dep_time dep_delay arr_time
    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-1   2013     1     1      517            515         2      830
-2   2013     1     1      533            529         4      850
-3   2013     1     1      542            540         2      923
-4   2013     1     1      544            545        -1     1004
-5   2013     1     1      554            600        -6      812
-6   2013     1     1      554            558        -4      740
-7   2013     1     1      555            600        -5      913
-8   2013     1     1      557            600        -3      709
-9   2013     1     1      557            600        -3      838
+ 1  2013     1     1      517            515         2      830
+ 2  2013     1     1      533            529         4      850
+ 3  2013     1     1      542            540         2      923
+ 4  2013     1     1      544            545        -1     1004
+ 5  2013     1     1      554            600        -6      812
+ 6  2013     1     1      554            558        -4      740
+ 7  2013     1     1      555            600        -5      913
+ 8  2013     1     1      557            600        -3      709
+ 9  2013     1     1      557            600        -3      838
 10  2013     1     1      558            600        -2      753
 # ... with 336,766 more rows, and 12 more variables: sched_arr_time <int>,
 #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
@@ -250,18 +250,18 @@ filter(flights, month == 1, day == 1)
 ```
 
 ```
-# A tibble: 842 × 19
+# A tibble: 842 x 19
     year month   day dep_time sched_dep_time dep_delay arr_time
    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-1   2013     1     1      517            515         2      830
-2   2013     1     1      533            529         4      850
-3   2013     1     1      542            540         2      923
-4   2013     1     1      544            545        -1     1004
-5   2013     1     1      554            600        -6      812
-6   2013     1     1      554            558        -4      740
-7   2013     1     1      555            600        -5      913
-8   2013     1     1      557            600        -3      709
-9   2013     1     1      557            600        -3      838
+ 1  2013     1     1      517            515         2      830
+ 2  2013     1     1      533            529         4      850
+ 3  2013     1     1      542            540         2      923
+ 4  2013     1     1      544            545        -1     1004
+ 5  2013     1     1      554            600        -6      812
+ 6  2013     1     1      554            558        -4      740
+ 7  2013     1     1      555            600        -5      913
+ 8  2013     1     1      557            600        -3      709
+ 9  2013     1     1      557            600        -3      838
 10  2013     1     1      558            600        -2      753
 # ... with 832 more rows, and 12 more variables: sched_arr_time <int>,
 #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
@@ -275,18 +275,18 @@ arrange(flights, year, month, day)
 ```
 
 ```
-# A tibble: 336,776 × 19
+# A tibble: 336,776 x 19
     year month   day dep_time sched_dep_time dep_delay arr_time
    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-1   2013     1     1      517            515         2      830
-2   2013     1     1      533            529         4      850
-3   2013     1     1      542            540         2      923
-4   2013     1     1      544            545        -1     1004
-5   2013     1     1      554            600        -6      812
-6   2013     1     1      554            558        -4      740
-7   2013     1     1      555            600        -5      913
-8   2013     1     1      557            600        -3      709
-9   2013     1     1      557            600        -3      838
+ 1  2013     1     1      517            515         2      830
+ 2  2013     1     1      533            529         4      850
+ 3  2013     1     1      542            540         2      923
+ 4  2013     1     1      544            545        -1     1004
+ 5  2013     1     1      554            600        -6      812
+ 6  2013     1     1      554            558        -4      740
+ 7  2013     1     1      555            600        -5      913
+ 8  2013     1     1      557            600        -3      709
+ 9  2013     1     1      557            600        -3      838
 10  2013     1     1      558            600        -2      753
 # ... with 336,766 more rows, and 12 more variables: sched_arr_time <int>,
 #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
@@ -312,18 +312,18 @@ flights_sml
 ```
 
 ```
-# A tibble: 336,776 × 7
+# A tibble: 336,776 x 7
     year month   day dep_delay arr_delay distance air_time
    <int> <int> <int>     <dbl>     <dbl>    <dbl>    <dbl>
-1   2013     1     1         2        11     1400      227
-2   2013     1     1         4        20     1416      227
-3   2013     1     1         2        33     1089      160
-4   2013     1     1        -1       -18     1576      183
-5   2013     1     1        -6       -25      762      116
-6   2013     1     1        -4        12      719      150
-7   2013     1     1        -5        19     1065      158
-8   2013     1     1        -3       -14      229       53
-9   2013     1     1        -3        -8      944      140
+ 1  2013     1     1         2        11     1400      227
+ 2  2013     1     1         4        20     1416      227
+ 3  2013     1     1         2        33     1089      160
+ 4  2013     1     1        -1       -18     1576      183
+ 5  2013     1     1        -6       -25      762      116
+ 6  2013     1     1        -4        12      719      150
+ 7  2013     1     1        -5        19     1065      158
+ 8  2013     1     1        -3       -14      229       53
+ 9  2013     1     1        -3        -8      944      140
 10  2013     1     1        -2         8      733      138
 # ... with 336,766 more rows
 ```
@@ -338,18 +338,18 @@ mutate(flights_sml,
 ```
 
 ```
-# A tibble: 336,776 × 10
+# A tibble: 336,776 x 10
     year month   day dep_delay arr_delay distance air_time  gain     hours
    <int> <int> <int>     <dbl>     <dbl>    <dbl>    <dbl> <dbl>     <dbl>
-1   2013     1     1         2        11     1400      227     9 3.7833333
-2   2013     1     1         4        20     1416      227    16 3.7833333
-3   2013     1     1         2        33     1089      160    31 2.6666667
-4   2013     1     1        -1       -18     1576      183   -17 3.0500000
-5   2013     1     1        -6       -25      762      116   -19 1.9333333
-6   2013     1     1        -4        12      719      150    16 2.5000000
-7   2013     1     1        -5        19     1065      158    24 2.6333333
-8   2013     1     1        -3       -14      229       53   -11 0.8833333
-9   2013     1     1        -3        -8      944      140    -5 2.3333333
+ 1  2013     1     1         2        11     1400      227     9 3.7833333
+ 2  2013     1     1         4        20     1416      227    16 3.7833333
+ 3  2013     1     1         2        33     1089      160    31 2.6666667
+ 4  2013     1     1        -1       -18     1576      183   -17 3.0500000
+ 5  2013     1     1        -6       -25      762      116   -19 1.9333333
+ 6  2013     1     1        -4        12      719      150    16 2.5000000
+ 7  2013     1     1        -5        19     1065      158    24 2.6333333
+ 8  2013     1     1        -3       -14      229       53   -11 0.8833333
+ 9  2013     1     1        -3        -8      944      140    -5 2.3333333
 10  2013     1     1        -2         8      733      138    10 2.3000000
 # ... with 336,766 more rows, and 1 more variables: gain_per_hour <dbl>
 ```
@@ -366,20 +366,19 @@ flights %>%
 ```
 
 ```
-Source: local data frame [365 x 4]
-Groups: year, month [?]
-
+# A tibble: 365 x 4
+# Groups:   year, month [?]
     year month   day  mean
    <int> <int> <int> <dbl>
-1   2013     1     1    NA
-2   2013     1     2    NA
-3   2013     1     3    NA
-4   2013     1     4    NA
-5   2013     1     5    NA
-6   2013     1     6    NA
-7   2013     1     7    NA
-8   2013     1     8    NA
-9   2013     1     9    NA
+ 1  2013     1     1    NA
+ 2  2013     1     2    NA
+ 3  2013     1     3    NA
+ 4  2013     1     4    NA
+ 5  2013     1     5    NA
+ 6  2013     1     6    NA
+ 7  2013     1     7    NA
+ 8  2013     1     8    NA
+ 9  2013     1     9    NA
 10  2013     1    10    NA
 # ... with 355 more rows
 ```
@@ -397,20 +396,19 @@ flights %>%
 ```
 
 ```
-Source: local data frame [131,106 x 6]
-Groups: dest [77]
-
+# A tibble: 131,106 x 6
+# Groups:   dest [77]
     year month   day  dest arr_delay   prop_delay
    <int> <int> <int> <chr>     <dbl>        <dbl>
-1   2013     1     1   IAH        11 1.106740e-04
-2   2013     1     1   IAH        20 2.012255e-04
-3   2013     1     1   MIA        33 2.350026e-04
-4   2013     1     1   ORD        12 4.239594e-05
-5   2013     1     1   FLL        19 9.377853e-05
-6   2013     1     1   ORD         8 2.826396e-05
-7   2013     1     1   LAX         7 3.444441e-05
-8   2013     1     1   DFW        31 2.817951e-04
-9   2013     1     1   ATL        12 3.996017e-05
+ 1  2013     1     1   IAH        11 1.106740e-04
+ 2  2013     1     1   IAH        20 2.012255e-04
+ 3  2013     1     1   MIA        33 2.350026e-04
+ 4  2013     1     1   ORD        12 4.239594e-05
+ 5  2013     1     1   FLL        19 9.377853e-05
+ 6  2013     1     1   ORD         8 2.826396e-05
+ 7  2013     1     1   LAX         7 3.444441e-05
+ 8  2013     1     1   DFW        31 2.817951e-04
+ 9  2013     1     1   ATL        12 3.996017e-05
 10  2013     1     1   DTW        16 1.157257e-04
 # ... with 131,096 more rows
 ```
@@ -459,7 +457,7 @@ parse_factor(x2, month_levels)
 ```
 [1] Dec  Apr  <NA> Mar 
 attr(,"problems")
-# A tibble: 1 × 4
+# A tibble: 1 x 4
     row   col           expected actual
   <int> <int>              <chr>  <chr>
 1     3    NA value in level set    Jam
@@ -617,7 +615,7 @@ h_age
 ```
 
 ```
-Time difference of 13778 days
+Time difference of 13781 days
 ```
 
 ```r
@@ -696,7 +694,7 @@ rnorm(100) %>%
 <img src="2017_7_studybreak_R-figure/unnamed-chunk-11-2.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" style="display: block; margin: auto;" />
 
 ```
- num [1:50, 1:2] 0.493 -0.307 1.797 1.855 -1.638 ...
+ num [1:50, 1:2] 0.743 1.242 -0.408 0.613 -1.944 ...
 ```
 
 purrr
@@ -759,18 +757,18 @@ mtcars
 ```
 
 ```
-# A tibble: 32 × 11
+# A tibble: 32 x 11
      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
    <dbl> <int> <dbl> <int> <dbl> <dbl> <dbl> <int> <int> <int> <int>
-1   21.0     6 160.0   110  3.90 2.620 16.46     0     1     4     4
-2   21.0     6 160.0   110  3.90 2.875 17.02     0     1     4     4
-3   22.8     4 108.0    93  3.85 2.320 18.61     1     1     4     1
-4   21.4     6 258.0   110  3.08 3.215 19.44     1     0     3     1
-5   18.7     8 360.0   175  3.15 3.440 17.02     0     0     3     2
-6   18.1     6 225.0   105  2.76 3.460 20.22     1     0     3     1
-7   14.3     8 360.0   245  3.21 3.570 15.84     0     0     3     4
-8   24.4     4 146.7    62  3.69 3.190 20.00     1     0     4     2
-9   22.8     4 140.8    95  3.92 3.150 22.90     1     0     4     2
+ 1  21.0     6 160.0   110  3.90 2.620 16.46     0     1     4     4
+ 2  21.0     6 160.0   110  3.90 2.875 17.02     0     1     4     4
+ 3  22.8     4 108.0    93  3.85 2.320 18.61     1     1     4     1
+ 4  21.4     6 258.0   110  3.08 3.215 19.44     1     0     3     1
+ 5  18.7     8 360.0   175  3.15 3.440 17.02     0     0     3     2
+ 6  18.1     6 225.0   105  2.76 3.460 20.22     1     0     3     1
+ 7  14.3     8 360.0   245  3.21 3.570 15.84     0     0     3     4
+ 8  24.4     4 146.7    62  3.69 3.190 20.00     1     0     4     2
+ 9  22.8     4 140.8    95  3.92 3.150 22.90     1     0     4     2
 10  19.2     6 167.6   123  3.92 3.440 18.30     1     0     4     4
 # ... with 22 more rows
 ```
@@ -801,18 +799,18 @@ read_excel(sample)
 ```
 
 ```
-# A tibble: 150 × 5
+# A tibble: 150 x 5
    Sepal.Length Sepal.Width Petal.Length Petal.Width Species
           <dbl>       <dbl>        <dbl>       <dbl>   <chr>
-1           5.1         3.5          1.4         0.2  setosa
-2           4.9         3.0          1.4         0.2  setosa
-3           4.7         3.2          1.3         0.2  setosa
-4           4.6         3.1          1.5         0.2  setosa
-5           5.0         3.6          1.4         0.2  setosa
-6           5.4         3.9          1.7         0.4  setosa
-7           4.6         3.4          1.4         0.3  setosa
-8           5.0         3.4          1.5         0.2  setosa
-9           4.4         2.9          1.4         0.2  setosa
+ 1          5.1         3.5          1.4         0.2  setosa
+ 2          4.9         3.0          1.4         0.2  setosa
+ 3          4.7         3.2          1.3         0.2  setosa
+ 4          4.6         3.1          1.5         0.2  setosa
+ 5          5.0         3.6          1.4         0.2  setosa
+ 6          5.4         3.9          1.7         0.4  setosa
+ 7          4.6         3.4          1.4         0.3  setosa
+ 8          5.0         3.4          1.5         0.2  setosa
+ 9          4.4         2.9          1.4         0.2  setosa
 10          4.9         3.1          1.5         0.1  setosa
 # ... with 140 more rows
 ```
@@ -830,18 +828,18 @@ read_excel(sample, sheet = "chickwts")
 ```
 
 ```
-# A tibble: 71 × 2
+# A tibble: 71 x 2
    weight      feed
     <dbl>     <chr>
-1     179 horsebean
-2     160 horsebean
-3     136 horsebean
-4     227 horsebean
-5     217 horsebean
-6     168 horsebean
-7     108 horsebean
-8     124 horsebean
-9     143 horsebean
+ 1    179 horsebean
+ 2    160 horsebean
+ 3    136 horsebean
+ 4    227 horsebean
+ 5    217 horsebean
+ 6    168 horsebean
+ 7    108 horsebean
+ 8    124 horsebean
+ 9    143 horsebean
 10    140 horsebean
 # ... with 61 more rows
 ```
@@ -851,18 +849,18 @@ read_excel(sample, sheet = 4)
 ```
 
 ```
-# A tibble: 1,000 × 5
+# A tibble: 1,000 x 5
       lat   long depth   mag stations
     <dbl>  <dbl> <dbl> <dbl>    <dbl>
-1  -20.42 181.62   562   4.8       41
-2  -20.62 181.03   650   4.2       15
-3  -26.00 184.10    42   5.4       43
-4  -17.97 181.66   626   4.1       19
-5  -20.42 181.96   649   4.0       11
-6  -19.68 184.31   195   4.0       12
-7  -11.70 166.10    82   4.8       43
-8  -28.11 181.93   194   4.4       15
-9  -28.74 181.74   211   4.7       35
+ 1 -20.42 181.62   562   4.8       41
+ 2 -20.62 181.03   650   4.2       15
+ 3 -26.00 184.10    42   5.4       43
+ 4 -17.97 181.66   626   4.1       19
+ 5 -20.42 181.96   649   4.0       11
+ 6 -19.68 184.31   195   4.0       12
+ 7 -11.70 166.10    82   4.8       43
+ 8 -28.11 181.93   194   4.4       15
+ 9 -28.74 181.74   211   4.7       35
 10 -17.47 179.59   622   4.3       19
 # ... with 990 more rows
 ```
@@ -872,7 +870,7 @@ read_excel(sample, range = "C1:E4")
 ```
 
 ```
-# A tibble: 3 × 3
+# A tibble: 3 x 3
   Petal.Length Petal.Width Species
          <dbl>       <dbl>   <chr>
 1          1.4         0.2  setosa
@@ -1004,19 +1002,19 @@ stocks %>% gather(stock, price, -time)
 ```
 
 ```
-# A tibble: 30 × 3
-         time stock       price
-       <date> <chr>       <dbl>
-1  2009-01-01     X -0.07628595
-2  2009-01-02     X -0.02717991
-3  2009-01-03     X  1.66036016
-4  2009-01-04     X -0.78156880
-5  2009-01-05     X -1.64259370
-6  2009-01-06     X  1.06976300
-7  2009-01-07     X -2.13784340
-8  2009-01-08     X -1.14265428
-9  2009-01-09     X  0.60946551
-10 2009-01-10     X  1.96340047
+# A tibble: 30 x 3
+         time stock      price
+       <date> <chr>      <dbl>
+ 1 2009-01-01     X -0.8907485
+ 2 2009-01-02     X -0.2441315
+ 3 2009-01-03     X  1.7794093
+ 4 2009-01-04     X -0.8450773
+ 5 2009-01-05     X -0.3579917
+ 6 2009-01-06     X -1.8159660
+ 7 2009-01-07     X  0.8706980
+ 8 2009-01-08     X  0.5966711
+ 9 2009-01-09     X -0.5351259
+10 2009-01-10     X -0.7898426
 # ... with 20 more rows
 ```
 
@@ -1030,20 +1028,19 @@ mini_iris %>% gather(key = flower_att, value = measurement, -Species)
 ```
 
 ```
-Source: local data frame [12 x 3]
-Groups: Species [3]
-
+# A tibble: 12 x 3
+# Groups:   Species [3]
       Species   flower_att measurement
        <fctr>        <chr>       <dbl>
-1      setosa Sepal.Length         5.1
-2  versicolor Sepal.Length         7.0
-3   virginica Sepal.Length         6.3
-4      setosa  Sepal.Width         3.5
-5  versicolor  Sepal.Width         3.2
-6   virginica  Sepal.Width         3.3
-7      setosa Petal.Length         1.4
-8  versicolor Petal.Length         4.7
-9   virginica Petal.Length         6.0
+ 1     setosa Sepal.Length         5.1
+ 2 versicolor Sepal.Length         7.0
+ 3  virginica Sepal.Length         6.3
+ 4     setosa  Sepal.Width         3.5
+ 5 versicolor  Sepal.Width         3.2
+ 6  virginica  Sepal.Width         3.3
+ 7     setosa Petal.Length         1.4
+ 8 versicolor Petal.Length         4.7
+ 9  virginica Petal.Length         6.0
 10     setosa  Petal.Width         0.2
 11 versicolor  Petal.Width         1.4
 12  virginica  Petal.Width         2.5
@@ -1061,19 +1058,19 @@ stocksm
 ```
 
 ```
-# A tibble: 30 × 3
-         time stock       price
-       <date> <chr>       <dbl>
-1  2009-01-01     X -0.07628595
-2  2009-01-02     X -0.02717991
-3  2009-01-03     X  1.66036016
-4  2009-01-04     X -0.78156880
-5  2009-01-05     X -1.64259370
-6  2009-01-06     X  1.06976300
-7  2009-01-07     X -2.13784340
-8  2009-01-08     X -1.14265428
-9  2009-01-09     X  0.60946551
-10 2009-01-10     X  1.96340047
+# A tibble: 30 x 3
+         time stock      price
+       <date> <chr>      <dbl>
+ 1 2009-01-01     X -0.8907485
+ 2 2009-01-02     X -0.2441315
+ 3 2009-01-03     X  1.7794093
+ 4 2009-01-04     X -0.8450773
+ 5 2009-01-05     X -0.3579917
+ 6 2009-01-06     X -1.8159660
+ 7 2009-01-07     X  0.8706980
+ 8 2009-01-08     X  0.5966711
+ 9 2009-01-09     X -0.5351259
+10 2009-01-10     X -0.7898426
 # ... with 20 more rows
 ```
 
@@ -1082,19 +1079,19 @@ stocksm %>% spread(stock, price)
 ```
 
 ```
-# A tibble: 10 × 4
-         time           X          Y          Z
-*      <date>       <dbl>      <dbl>      <dbl>
-1  2009-01-01 -0.07628595 -1.1202480  5.6732925
-2  2009-01-02 -0.02717991 -1.3284549  4.8551812
-3  2009-01-03  1.66036016  2.7888930  2.3343067
-4  2009-01-04 -0.78156880 -0.2029881  5.9908608
-5  2009-01-05 -1.64259370 -1.4231483  5.6110080
-6  2009-01-06  1.06976300 -1.0215021  0.3747096
-7  2009-01-07 -2.13784340  0.6472273  3.9794081
-8  2009-01-08 -1.14265428  1.4249315  2.3501897
-9  2009-01-09  0.60946551  0.3341988  6.9444750
-10 2009-01-10  1.96340047  1.0371467 -1.6025150
+# A tibble: 10 x 4
+         time          X           Y          Z
+ *     <date>      <dbl>       <dbl>      <dbl>
+ 1 2009-01-01 -0.8907485 -0.01078709 -0.5105913
+ 2 2009-01-02 -0.2441315  0.89756605 -2.5295533
+ 3 2009-01-03  1.7794093 -1.44692872 -2.7337387
+ 4 2009-01-04 -0.8450773 -5.32685440 -3.1919612
+ 5 2009-01-05 -0.3579917 -1.63970794  1.8523929
+ 6 2009-01-06 -1.8159660 -1.33668666  3.7342904
+ 7 2009-01-07  0.8706980  3.90879253  1.8654625
+ 8 2009-01-08  0.5966711 -1.60424106 -8.5130226
+ 9 2009-01-09 -0.5351259  0.77609221 -4.4486560
+10 2009-01-10 -0.7898426  1.15920599 -0.2546277
 ```
 
 
@@ -1232,7 +1229,6 @@ stats_tidyverse_downloads_w %>%
 ```
 
 <img src="2017_7_studybreak_R-figure/unnamed-chunk-21-1.png" title="plot of chunk unnamed-chunk-21" alt="plot of chunk unnamed-chunk-21" style="display: block; margin: auto;" />
-
 
 Tidyverse를 공부하면서
 ========================================================
