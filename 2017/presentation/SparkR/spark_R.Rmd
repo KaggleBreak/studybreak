@@ -1,0 +1,114 @@
+---
+title: 'spark + R'
+output:
+  html_document: default
+  html_notebook: default
+---
+### 발표 내용 
+spark + R 기본 사용법
+특징과 장단점 소개
+기존 스터디 내용 : https://github.com/biospin/R_Bio
+
+### R에서 spark 을 연동 방법
+- SparkR (R on Spark) : http://spark.apache.org/docs/latest/sparkr.html
+- sparklyr — R interface for Apache Spark : http://spark.rstudio.com/
+
+
+### SparkR (R on Spark)의 설치와 사용법
+- Windows  가능하지만 유닉스 계열(맥, 리눅스)이 더욱 쉬움.
+- Bash on Ubuntu on Windows에서는 R-Studio Server가 동작 X
+- CentOS 6.7에서 실행
+- http://spark.apache.org/downloads.html 에서 spark-2.0.2-bin-hadoop2.7.tgz 다운로드후에  압축 풀기
+- vi /etc/hosts 안에 hostname 이 꼭 등록 필요
+
+
+```{bash eval=FALSE}
+wget http://d3kbcqa49mib13.cloudfront.net/spark-2.0.2-bin-hadoop2.7.tgz 
+tar xvf spark-2.0.2-bin-hadoop2.7.tgz 
+ln -s  spark-2.0.2-bin-hadoop2.7   spark
+```
+
+
+
+```{r}
+if (nchar(Sys.getenv("SPARK_HOME")) < 1) {
+  Sys.setenv(SPARK_HOME = "/home/goodmit/spark")
+}
+library(SparkR, lib.loc = c(file.path(Sys.getenv("SPARK_HOME"), "R", "lib")))
+sparkR.session(master = "local[*]", 
+               sparkConfig = list(spark.driver.memory = "2g"),
+               sparkPackages = "com.databricks:spark-avro_2.11:3.0.0" )
+```
+
+- master = "local[*]"  을 수정해서 spark cluster로 접속 가능
+    - 예) master = "spark://xxx.xxx.xxx:2345"
+    - 예) master = "yarn"
+    - 예) master = "mesos://xxx.xxx.xxx:5050"
+
+#### SparkDataFrames 생성
+- From local data frames
+
+```{r}
+df <- as.DataFrame(faithful)
+head(df)
+```
+
+- From Data Sources
+
+```{r}
+people <- read.df("/home/goodmit/spark/examples/src/main/resources/people.json", "json")
+head(people)
+```
+
+```{r}
+printSchema(people)
+```
+
+#### SparkDataFrame Operations
+
+```{r}
+df
+
+# Select only the "eruptions" column
+head(select(df, df$eruptions))
+```
+
+```{r}
+# You can also pass in column name as strings
+head(select(df, "eruptions"))
+
+```
+
+```{r}
+# Filter the SparkDataFrame to only retain rows with wait times shorter than 50 mins
+head(filter(df, df$waiting < 50))
+
+```
+
+```{r}
+# We use the `n` operator to count the number of times each waiting time appears
+head(summarize(groupBy(df, df$waiting), count = n(df$waiting)))
+
+```
+
+```{r}
+# We can also sort the output from the aggregation to get the most common waiting times
+waiting_counts <- summarize(groupBy(df, df$waiting), count = n(df$waiting))
+head(arrange(waiting_counts, desc(waiting_counts$count)))
+
+```
+
+```{r}
+# Convert waiting time from hours to seconds.
+df$waiting_secs <- df$waiting * 60
+head(df)
+```
+
+
+#### spark + R 의 단점
+
+- MapReduce방식의 코드와 dataframe을 을 사용할때 차이점
+- https://github.com/biospin/R_Bio/blob/master/part03/week1_161004/sparkR/sparkR_chap04.LeftOuterJoin.ipynb
+
+#### spark + R 의 장점
+

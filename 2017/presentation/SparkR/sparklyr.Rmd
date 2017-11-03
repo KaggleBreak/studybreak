@@ -1,0 +1,80 @@
+---
+title: "sparklyr"
+output: html_notebook
+---
+
+### sparklyr — R interface for Apache Spark 의 설치와 사용법
+
+- 사전 준비 
+
+```{bash  eval=FALSE}
+sudo yum -y install libcurl-devel
+```
+
+
+
+```{r   eval=FALSE}  
+install.packages("sparklyr" , repos = 'http://cran.nexr.com') 
+```
+
+```{r}
+detach("package:SparkR")
+library(sparklyr)
+# spark_install(version = "1.6.2")
+
+if (nchar(Sys.getenv("SPARK_HOME")) < 1) {
+  Sys.setenv(SPARK_HOME = "/home/goodmit/spark")
+}
+sc <- spark_connect(master = "local")
+```
+
+#### Reading Data
+
+```{r eval=FALSE} 
+install.packages("dplyr", repos = "http://cran.nexr.com" )
+install.packages("nycflights13", repos = "http://cran.nexr.com" )
+install.packages("Lahman" , repos = "http://cran.nexr.com" )
+```
+
+
+```{r}
+library(dplyr)
+library(nycflights13)
+
+iris_tbl <- copy_to(sc, iris)
+flights_tbl <- copy_to(sc, nycflights13::flights, "flights")
+batting_tbl <- copy_to(sc, Lahman::Batting, "batting")
+```
+
+```{r}
+src_tbls(sc)
+```
+
+#### Using dplyr
+```{r}
+# filter by departure delay
+flights_tbl %>% filter(dep_delay == 2)
+```
+
+```{r}
+delay <- flights_tbl %>% 
+  group_by(tailnum) %>%
+  summarise(count = n(), dist = mean(distance), delay = mean(arr_delay)) %>%
+  filter(count > 20, dist < 2000, !is.na(delay)) %>%
+  collect()
+```
+
+```{r eval=FALSE}
+install.packages('ggplot2', repos = 'http://cran.nexr.com')
+```
+
+
+```{r}
+# plot delays
+library(ggplot2)
+ggplot(delay, aes(dist, delay)) +
+  geom_point(aes(size = count), alpha = 1/2) +
+  geom_smooth() +
+  scale_size_area(max_size = 2)
+```
+
