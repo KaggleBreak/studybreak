@@ -9,7 +9,7 @@
  장소 : NAVER D2 STARTUP FACTORY
        강남역 2번 출구, 메리츠 타워 16층.
  
- 참가신청 : 온오프믹스 이벤트 - http://onoffmix.com/event/84477
+ 참가신청 : 
  
  github - https://github.com/KaggleBreak/studybreak/
  
