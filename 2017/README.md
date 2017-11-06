@@ -2,7 +2,7 @@
 
 ![](img/title.jpg)
 
- NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://dev.naver.com/d2)
+ NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://d2.naver.com/home)
  
  일시 : 12/2 토, 오후 2시 - 6시 00분 (4시간)
  
