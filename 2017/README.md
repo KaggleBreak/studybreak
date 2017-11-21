@@ -9,8 +9,8 @@
  장소 : NAVER D2 STARTUP FACTORY
        강남역 2번 출구, 메리츠 타워 16층.
  
- 참가신청 : 
- 
+ 참가신청 방법 : https://www.facebook.com/events/1536498469729530/  (이벤트의 참석 버튼)
+  
  github - https://github.com/KaggleBreak/studybreak/
  
 ![](img/d2.png)
