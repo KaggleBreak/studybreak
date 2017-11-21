@@ -1,6 +1,6 @@
 # 2017년
 
-![](img/title.jpg)
+![](img/title.png)
 
  NAVER D2 개발자 커뮤니티 지원 프로그램에서 후원합니다(http://d2.naver.com/home)
  
