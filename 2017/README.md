@@ -20,11 +20,11 @@
 |    시간        |      제목                                | 발표자  |  발표자료   |   내용                                         |
 |:---	        |:---	                                  |:---	    |:---	 |:---	                                               |
 | 2시 분 ~ 2시 5분    | 싸이버스 전체 소개                                            | 김무성 |           |
-| 2시 5분 ~ 2시 10분  | 캐글뽀개기 소개                                            | 이상열 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%BA%90%EA%B8%80%EB%BD%80%EA%B0%9C%EA%B8%B0%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx)           |
-| 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                       | 김성동 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/special/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%B1%97%EB%B4%87-Dialogue-Policy-Optimization.pdf)           |
+| 2시 5분 ~ 2시 10분  | 캐글뽀개기 소개                                            | 이상열 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%BA%90%EA%B8%80%EB%BD%80%EA%B0%9C%EA%B8%B0%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx) |
+| 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                       | 김성동 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/special/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%B1%97%EB%B4%87-Dialogue-Policy-Optimization.pdf) |
 | 2시 25분 ~ 2시 40분 | (싸이그래머-특강) 개발자가 바라보는 깊이 있는 텍스트 데이터 !?!       | 김태욱 |           |
 | 2시 40분 ~ 2시 55분  | (싸이그래머-특강) Deep Probabilistic Programming                      | 이재영 |           |
-| 2시 55분 ~ 3시  | 싸이랭 소개                     | 김무성 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%8B%B8%EC%9D%B4%EB%9E%AD%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx)           |
+| 2시 55분 ~ 3시  | 싸이랭 소개                     | 김무성 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%8B%B8%EC%9D%B4%EB%9E%AD%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx)|
 | 3시 ~ 3시 10분  | 쉬는 시간                                                  |          |           |
 | 3시 10분 ~ 3시 15분 | 딥리워드 소개                                              | 김무성 |           |
 | 3시 15분 ~ 3시 30분 | (캐글뽀개기-특강) CodeOnWeb 및 backend.ai 소개     | 김준기 |           |
