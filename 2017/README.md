@@ -37,7 +37,7 @@
 | 4시 35분 ~ 4시 50분 | (바이오스핀-특강) 힌튼과 콩나무 - 딥러닝을 이용한 콩 유전체 정보 예측 | 강양제 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/special/Cropscience2017_yangjaekang.pptx)  |
 | 4시 50분 ~ 5시 5분  | (바이오스핀-특강) 생물정보학 관련                                     | 박혜진 |          |
 | 5시 5분 ~ 5시 15분  | 쉬는 시간                                                             |        |          |
-| 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |          |
+| 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%8B%B8%EC%9D%B4%EC%A7%80%EB%A8%BC%ED%8A%B8%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx)|
 | 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |          |
 | 5시 35분 ~ 5시 40분 | 데이터그램 소개                                                       | 김승욱 |          |
 | 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |          |
