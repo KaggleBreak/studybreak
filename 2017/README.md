@@ -28,7 +28,7 @@
 | 3시 ~ 3시 10분      | 쉬는 시간                                                             |        |          |
 | 3시 10분 ~ 3시 15분 | 딥리워드 소개                                                         | 김무성 |          |
 | 3시 15분 ~ 3시 30분 | (캐글뽀개기-특강) CodeOnWeb 및 backend.ai 소개                        | 김준기 |          |
-| 3시 30분 ~ 3시 45분 | (딥리워드-특강) 분산 강화학습                                         | 김정주 |          |
+| 3시 30분 ~ 3시 45분 | (딥리워드-특강) 분산 강화학습                                         | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI)|
 | 3시 45분 ~ 4시      | (바벨피쉬-특강) 강화학습 기반 QA 시스템                               | 김영삼 |[발표자료](https://drive.google.com/open?id=1dWM6fRufZFWQvqp2NKvqXjrfBe_68tnu)|
 | 4시 ~ 4시 10분      | 쉬는 시간                                                             |        |          |
 | 4시 10분~ 4시 15분  | 바벨피쉬 소개                                                         | 송치성 |[발표자료](https://drive.google.com/open?id=1gcT3YR1f9GnSz1YN4eDJljiYBiibgzq3vTDuj7hvbIo)  |
