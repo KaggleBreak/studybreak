@@ -19,7 +19,6 @@
 
 |    시간        |      제목                                | 발표자  |  발표자료   |  
 |:---	        |:---	                                  |:---	    |:---	 |
-|
 | 2시 분 ~ 2시 5분    | 싸이버스 전체 소개                                            | 김무성 |           |
 | 2시 5분 ~ 2시 10분  | 캐글뽀개기 소개                                            | 이상열 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/study/%EC%BA%90%EA%B8%80%EB%BD%80%EA%B0%9C%EA%B8%B0%EC%86%8C%EA%B0%9C_%EC%8A%A4%ED%84%B0%EB%94%94%EB%BD%80%EA%B0%9C%EA%B8%B02017.pptx)|
 | 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                       | 김성동 |[발표자료](https://github.com/KaggleBreak/studybreak/blob/gh-pages/2017/presentation/special/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%B1%97%EB%B4%87-Dialogue-Policy-Optimization.pdf)|
