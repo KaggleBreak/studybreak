@@ -28,13 +28,13 @@
 | 3시 ~ 3시 10분      | 쉬는 시간                                                             |        |          |
 | 3시 10분 ~ 3시 15분 | 딥리워드 소개                                                         | 김무성 |[발표자료](https://drive.google.com/open?id=1IHeCIW9bJpYSujl1zMlMyVh9Qht7T4fYPKRdP3pYvSA)|
 | 3시 15분 ~ 3시 30분 | (캐글뽀개기-특강) CodeOnWeb 및 backend.ai 소개                        | 김준기 |[발표자료](https://drive.google.com/open?id=1qUY25XCwnp5rMoQ_8629IkOWUdYHibHe)|
-| 3시 30분 ~ 3시 45분 | (딥리워드-특강) 분산 강화학습                                         | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI)|
+| 3시 30분 ~ 3시 45분 | (바이오스핀-특강) 힌튼과 콩나무 - 딥러닝을 이용한 콩 유전체 정보 예측 | 강양제 |[발표자료](https://drive.google.com/open?id=1GDCHDvW_OZnRQMkHcFlHFUxxFMAaCN55)|
 | 3시 45분 ~ 4시      | (바벨피쉬-특강) 강화학습 기반 QA 시스템                               | 김영삼 |[발표자료](https://drive.google.com/open?id=1dWM6fRufZFWQvqp2NKvqXjrfBe_68tnu)|
 | 4시 ~ 4시 10분      | 쉬는 시간                                                             |        |          |
 | 4시 10분~ 4시 15분  | 바벨피쉬 소개                                                         | 송치성 |[발표자료](https://drive.google.com/open?id=17_dvC26reJtbweGyM2X-QaAol5kFp1_1)  |
 | 4시 15분 ~ 4시 30분 | (딥리워드-특강) DIY 강화학습(나만의 슈퍼마리오 뚝딱뚝딱 만들기)       | 정원석 |[발표자료](https://drive.google.com/open?id=1Kdgyj99Lfx4F84jf8c6-yz9yOmtQN0_TO-EfG11vkBM)|
 | 4시 30분 ~ 4시 35분 | 바이오스핀 소개                                                       | 이승우 |[발표자료](https://drive.google.com/open?id=1RW8zHsX_6T6LFvHDj_6TyrSynTK8BlU3)|
-| 4시 35분 ~ 4시 50분 | (바이오스핀-특강) 힌튼과 콩나무 - 딥러닝을 이용한 콩 유전체 정보 예측 | 강양제 |[발표자료](https://drive.google.com/open?id=1GDCHDvW_OZnRQMkHcFlHFUxxFMAaCN55)|
+| 4시 35분 ~ 4시 50분 | (딥리워드-특강) 분산 강화학습 | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI)|
 | 4시 50분 ~ 5시 5분  | (바이오스핀-특강) 생물정보학 관련                                     | 박혜진 |[발표자료](https://drive.google.com/open?id=1zKCrn0yWyM8La_yil4mLAzg6k46DUOqo)|
 | 5시 5분 ~ 5시 15분  | 쉬는 시간                                                             |        |          |
 | 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1r7NCOdsih4AupBNr22CLkb22VrRO62pFlMMcmSiIR0Q)|
