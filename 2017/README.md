@@ -42,6 +42,6 @@
 | 5시 35분 ~ 5시 40분 | 데이터그램 소개                                                       | 김승욱 |[발표자료](https://drive.google.com/open?id=1gRFlhco6Zucbruy7RtLAeLADE0t1k4P2)|
 | 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |[발표자료](https://drive.google.com/open?id=1KNEiNBm8IQJJpKcL43gw8y1JbueRFiwi)|
 | 5시 45분 ~ 5시 50분 | 알파로우 소개                                                         | 이재석 |[발표자료](https://drive.google.com/open?id=1uwQ8KgD7065l8UCGep4ZLasAkfYFuNGK)|
-| 5시 50분 ~ 5시 55분 | AI Finance 소개                                                       | 송준호 |          |
-| 5시 55분 ~ 6시 10분 | (AIFin-특강) 딥러닝 + 금융                                            | 송준호 |          |
+| 5시 50분 ~ 5시 55분 | AI Finance 소개                                                       | 송준호 |[발표자료](https://drive.google.com/open?id=1CkS-t8EnIafM9ZD6uao29Y-XWnh_0Tr6)|
+| 5시 55분 ~ 6시 10분 | (AIFin-특강) 딥러닝 + 금융                                            | 송준호 |[발표자료](https://drive.google.com/open?id=1Z8V6vMz2jW6fwxZZn_II8ozLvoZm0nZS)|
 | 6시 10분 ~ 6시 20분 | 싸이그래머 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1RTv1-tJJqExtuk5RhCJn2B5jo2B3pYDwVKXhNGoH16s)|
