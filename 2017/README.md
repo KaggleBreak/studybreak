@@ -38,7 +38,7 @@
 | 4시 50분 ~ 5시 5분  | (바이오스핀-특강) 생물정보학 관련                                     | 박혜진 |[발표자료](https://drive.google.com/open?id=1zKCrn0yWyM8La_yil4mLAzg6k46DUOqo)|
 | 5시 5분 ~ 5시 15분  | 쉬는 시간                                                             |        |          |
 | 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1r7NCOdsih4AupBNr22CLkb22VrRO62pFlMMcmSiIR0Q)|
-| 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1k33BzG7tELmilyhhjepV5Kz6GRYE64oI)|
+| 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1b5eEGbMN081PZiLGV1rQhvIXcnztpQ2p)|
 | 5시 35분 ~ 5시 40분 | 데이터그램 소개                                                       | 김승욱 |[발표자료](https://drive.google.com/open?id=1gRFlhco6Zucbruy7RtLAeLADE0t1k4P2)|
 | 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |          |
 | 5시 45분 ~ 5시 50분 | 알파로우 소개                                                         | 이재석 |[발표자료](https://drive.google.com/open?id=1uwQ8KgD7065l8UCGep4ZLasAkfYFuNGK)|
