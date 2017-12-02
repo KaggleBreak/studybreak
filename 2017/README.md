@@ -21,7 +21,7 @@
 |:---	|:---	|:---	|:---	|
 | 2시 분 ~ 2시 5분    | 싸이버스 전체 소개                                                    | 김무성 |[발표자료](https://drive.google.com/open?id=1nXSfNk7-z74zULzBZX6NKixc6KD-3lmU6Nlr_TujsHI)|
 | 2시 5분 ~ 2시 10분  | 캐글뽀개기 소개                                                       | 이상열 |[발표자료](https://drive.google.com/open?id=1ry3dxJRanKvHFBeQig1KeoTdwlYg65NxTNj8okdEM1E)|
-| 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                         | 김성동 |[발표자료](https://drive.google.com/open?id=13HJVHTV5SYN49kgeUa20oM0SkVOysC4C)|
+| 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                         | 김성동 |[발표자료](https://drive.google.com/open?id=1eL9eg0pYOpmSrLEbcPHXdQiQfUiWEQ7_)|
 | 2시 25분 ~ 2시 40분 | (싸이그래머-특강) 개발자가 바라보는 깊이 있는 텍스트 데이터 !?!       | 김태욱 |[발표자료](https://drive.google.com/open?id=15Ne9szhwy7WrohIcf9Y0G0xjlnsiCQ03)|
 | 2시 40분 ~ 2시 55분 | (싸이그래머-특강) Deep Probabilistic Programming                      | 이재영 |[발표자료](https://drive.google.com/open?id=1fQhsLyQqSS8AFiTKTZyZpm6zyqilJ3Tu)|
 | 2시 55분 ~ 3시      | 싸이랭 소개                                                           | 김무성 |[발표자료](https://drive.google.com/open?id=1SeD74ItdrpAuB3lWceZ5LgRrBbaCf8D6ztCAwsLr23U)|
