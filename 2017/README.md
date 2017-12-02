@@ -40,7 +40,7 @@
 | 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1r7NCOdsih4AupBNr22CLkb22VrRO62pFlMMcmSiIR0Q)|
 | 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1b5eEGbMN081PZiLGV1rQhvIXcnztpQ2p)|
 | 5시 35분 ~ 5시 40분 | 데이터그램 소개                                                       | 김승욱 |[발표자료](https://drive.google.com/open?id=1gRFlhco6Zucbruy7RtLAeLADE0t1k4P2)|
-| 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |          |
+| 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |[발표자료](https://drive.google.com/open?id=1KNEiNBm8IQJJpKcL43gw8y1JbueRFiwi)|
 | 5시 45분 ~ 5시 50분 | 알파로우 소개                                                         | 이재석 |[발표자료](https://drive.google.com/open?id=1uwQ8KgD7065l8UCGep4ZLasAkfYFuNGK)|
 | 5시 50분 ~ 5시 55분 | AI Finance 소개                                                       | 송준호 |          |
 | 5시 55분 ~ 6시 10분 | (AIFin-특강) 딥러닝 + 금융                                            | 송준호 |          |
