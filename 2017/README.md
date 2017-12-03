@@ -35,7 +35,7 @@
 | 4시 15분 ~ 4시 30분 | (딥리워드-특강) DIY 강화학습(나만의 슈퍼마리오 뚝딱뚝딱 만들기)       | 정원석 |[발표자료](https://drive.google.com/open?id=1Kdgyj99Lfx4F84jf8c6-yz9yOmtQN0_TO-EfG11vkBM)|
 | 4시 30분 ~ 4시 35분 | 바이오스핀 소개                                                       | 이승우 |[발표자료](https://drive.google.com/open?id=1RW8zHsX_6T6LFvHDj_6TyrSynTK8BlU3)|
 | 4시 35분 ~ 4시 50분 | (딥리워드-특강) 분산 강화학습 | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI)|
-| 4시 50분 ~ 5시 5분  | (바이오스핀-특강) Deep learning based Cancer drug response prediction | 박혜진 |[발표자료](https://drive.google.com/open?id=1zKCrn0yWyM8La_yil4mLAzg6k46DUOqo)|
+| 4시 50분 ~ 5시 5분  | (바이오스핀-특강) Deep learning based Cancer drug response prediction | 박혜진 ||
 | 5시 5분 ~ 5시 15분  | 쉬는 시간                                                             |        |          |
 | 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1r7NCOdsih4AupBNr22CLkb22VrRO62pFlMMcmSiIR0Q)|
 | 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1b5eEGbMN081PZiLGV1rQhvIXcnztpQ2p)|
