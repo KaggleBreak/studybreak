@@ -22,23 +22,23 @@
 | 2시 분 ~ 2시 5분    | 싸이버스 전체 소개                                                    | 김무성 |[발표자료](https://drive.google.com/open?id=1nXSfNk7-z74zULzBZX6NKixc6KD-3lmU6Nlr_TujsHI)|
 | 2시 5분 ~ 2시 10분  | 캐글뽀개기 소개                                                       | 이상열 |[발표자료](https://drive.google.com/open?id=1ry3dxJRanKvHFBeQig1KeoTdwlYg65NxTNj8okdEM1E)|
 | 2시 10분 ~ 2시 25분 | (바벨피쉬-특강) 강화학습을 이용한 챗봇 만들기                         | 김성동 |[발표자료](https://drive.google.com/open?id=1thN7vY8QnWtVM1X5myoxnhRi8DK1tlpG), [동영상](https://www.youtube.com/watch?v=nBSmxTW8FxY&index=6&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4)|
-| 2시 25분 ~ 2시 40분 | (싸이그래머-특강) 개발자가 바라보는 깊이 있는 텍스트 데이터 !?!       | 김태욱 |[발표자료](https://drive.google.com/open?id=15Ne9szhwy7WrohIcf9Y0G0xjlnsiCQ03)|
-| 2시 40분 ~ 2시 55분 | (싸이그래머-특강) Deep Probabilistic Programming                      | 이재영 |[발표자료](https://drive.google.com/open?id=1fQhsLyQqSS8AFiTKTZyZpm6zyqilJ3Tu)|
+| 2시 25분 ~ 2시 40분 | (싸이그래머-특강) 개발자가 바라보는 깊이 있는 텍스트 데이터 !?!       | 김태욱 |[발표자료](https://drive.google.com/open?id=15Ne9szhwy7WrohIcf9Y0G0xjlnsiCQ03), [동영상](https://www.youtube.com/watch?v=PNQX7E9iTek&index=2&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4)|
+| 2시 40분 ~ 2시 55분 | (싸이그래머-특강) Deep Probabilistic Programming                      | 이재영 |[발표자료](https://drive.google.com/open?id=1fQhsLyQqSS8AFiTKTZyZpm6zyqilJ3Tu), [동영상](https://www.youtube.com/watch?v=vMiSuAsCg4k&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=1)|
 | 2시 55분 ~ 3시      | 싸이랭 소개                                                           | 김무성 |[발표자료](https://drive.google.com/open?id=1SeD74ItdrpAuB3lWceZ5LgRrBbaCf8D6ztCAwsLr23U)|
 | 3시 ~ 3시 10분      | 쉬는 시간                                                             |        |          |
 | 3시 10분 ~ 3시 15분 | 딥리워드 소개                                                         | 김무성 |[발표자료](https://drive.google.com/open?id=1IHeCIW9bJpYSujl1zMlMyVh9Qht7T4fYPKRdP3pYvSA)|
-| 3시 15분 ~ 3시 30분 | (캐글뽀개기-특강) CodeOnWeb 및 backend.ai 소개                        | 김준기 |[발표자료](https://drive.google.com/open?id=1qUY25XCwnp5rMoQ_8629IkOWUdYHibHe)|
-| 3시 30분 ~ 3시 45분 | (바이오스핀-특강) 힌튼과 콩나무 - 딥러닝을 이용한 콩 유전체 정보 예측 | 강양제 |[발표자료](https://drive.google.com/open?id=1GDCHDvW_OZnRQMkHcFlHFUxxFMAaCN55)|
-| 3시 45분 ~ 4시      | (바벨피쉬-특강) 강화학습 기반 QA 시스템                               | 김영삼 |[발표자료](https://drive.google.com/open?id=1dWM6fRufZFWQvqp2NKvqXjrfBe_68tnu)|
+| 3시 15분 ~ 3시 30분 | (캐글뽀개기-특강) CodeOnWeb 및 backend.ai 소개                        | 김준기 |[발표자료](https://drive.google.com/open?id=1qUY25XCwnp5rMoQ_8629IkOWUdYHibHe), [동영상](https://www.youtube.com/watch?v=FxYOsi_MJe8&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=3)|
+| 3시 30분 ~ 3시 45분 | (바이오스핀-특강) 힌튼과 콩나무 - 딥러닝을 이용한 콩 유전체 정보 예측 | 강양제 |[발표자료](https://drive.google.com/open?id=1GDCHDvW_OZnRQMkHcFlHFUxxFMAaCN55), [동영상](https://www.youtube.com/watch?v=I6NG-96sonA&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=4)|
+| 3시 45분 ~ 4시      | (바벨피쉬-특강) 강화학습 기반 QA 시스템                               | 김영삼 |[발표자료](https://drive.google.com/open?id=1dWM6fRufZFWQvqp2NKvqXjrfBe_68tnu), [동영상](https://www.youtube.com/watch?v=jw-Am-sPTsY&index=5&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4)|
 | 4시 ~ 4시 10분      | 쉬는 시간                                                             |        |          |
 | 4시 10분~ 4시 15분  | 바벨피쉬 소개                                                         | 송치성 |[발표자료](https://drive.google.com/open?id=17_dvC26reJtbweGyM2X-QaAol5kFp1_1)  |
-| 4시 15분 ~ 4시 30분 | (딥리워드-특강) DIY 강화학습(나만의 슈퍼마리오 뚝딱뚝딱 만들기)       | 정원석 |[발표자료](https://drive.google.com/open?id=1Kdgyj99Lfx4F84jf8c6-yz9yOmtQN0_TO-EfG11vkBM)|
+| 4시 15분 ~ 4시 30분 | (딥리워드-특강) DIY 강화학습(나만의 슈퍼마리오 뚝딱뚝딱 만들기)       | 정원석 |[발표자료](https://drive.google.com/open?id=1Kdgyj99Lfx4F84jf8c6-yz9yOmtQN0_TO-EfG11vkBM), [동영상](https://www.youtube.com/watch?v=B6MIirbv5Qw&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=7)|
 | 4시 30분 ~ 4시 35분 | 바이오스핀 소개                                                       | 이승우 |[발표자료](https://drive.google.com/open?id=1RW8zHsX_6T6LFvHDj_6TyrSynTK8BlU3)|
-| 4시 35분 ~ 4시 50분 | (딥리워드-특강) 분산 강화학습 | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI)|
+| 4시 35분 ~ 4시 50분 | (딥리워드-특강) 분산 강화학습 | 김정주 |[발표자료](https://drive.google.com/open?id=1LSN12iY0bNDKmDeqlgGoswqpUqWjDgsI), [동영상](https://www.youtube.com/watch?v=-PH0hKLVITc&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=8)|
 | 4시 50분 ~ 5시 5분  | (바이오스핀-특강) Deep learning based Cancer drug response prediction | 박혜진 ||
 | 5시 5분 ~ 5시 15분  | 쉬는 시간                                                             |        |          |
 | 5시 15분 ~ 5시 20분 | 싸이지먼트 소개                                                       | 김무성 |[발표자료](https://drive.google.com/open?id=1r7NCOdsih4AupBNr22CLkb22VrRO62pFlMMcmSiIR0Q)|
-| 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1b5eEGbMN081PZiLGV1rQhvIXcnztpQ2p)|
+| 5시 20분 ~ 5시 35분 | (싸이지먼트-특강) 애드테크101                                         | 이상현 |[발표자료](https://drive.google.com/open?id=1b5eEGbMN081PZiLGV1rQhvIXcnztpQ2p), [동영상](https://www.youtube.com/watch?v=DZiqzD8Vbvc&list=PLwpQPUw3B57MCEt9IaWaenaDELAk_Y1o4&index=9)|
 | 5시 35분 ~ 5시 40분 | 데이터그램 소개                                                       | 김승욱 |[발표자료](https://drive.google.com/open?id=1gRFlhco6Zucbruy7RtLAeLADE0t1k4P2)|
 | 5시 40분 ~ 5시 45분 | 심플랙스 컴플랙서티 소개                                              | 심상진 |[발표자료](https://drive.google.com/open?id=1KNEiNBm8IQJJpKcL43gw8y1JbueRFiwi)|
 | 5시 45분 ~ 5시 50분 | 알파로우 소개                                                         | 이재석 |[발표자료](https://drive.google.com/open?id=1uwQ8KgD7065l8UCGep4ZLasAkfYFuNGK)|
